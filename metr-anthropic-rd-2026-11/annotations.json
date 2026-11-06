@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "METR：Anthropic AI 研发加速评估（2026 年 10 月）中文详细导读",
+    "author": "编译自 METR 原文",
+    "date": "2026.11.06",
+    "reading_time": "约 25 分钟",
+    "tags": ["METR", "Anthropic", "AI R&D", "AECI", "安全评估"],
+    "subtitle": "按原文章节的详细导读：约 2× 加速、多数或来自 AI 做研发、大半证据被删红；附 X 讨论",
+    "lang": null,
+    "theme": "indigo-porcelain"
+  },
+  "upgrades": [
+    { "type": "summary-card", "line": 10, "label": "三条主观结论", "items": [
+      { "title": "速度 ≈2×", "desc": "定义清楚任务上约两倍于 2024-03→2025-10；区间约 1.3×–3×" },
+      { "title": "归因 ≈80% AI", "desc": "当前加速多数或来自用 AI 做研发；2025 末非 AI 因素也大" },
+      { "title": "未见近端瓶颈", "desc": "未来 12 个月未见清晰卡住点；可能进一步复利加速" }
+    ]},
+    { "type": "highlight", "line": 18, "label": "阅读提示" },
+    { "type": "aside", "line": 28, "title": "删改的后果", "text": "公开报告达不到「证据透明」。公众无法自己核对最关键证据，只能比理想状态更多地依赖 METR 的判断。" },
+    { "type": "highlight", "line": 103, "label": "硬数字" },
+    { "type": "aside", "line": 113, "title": "不是算力增速", "text": "训练算力规模增速与历史相似，甚至略慢。加速不是「砸更多训练算力」造成的。" },
+    { "type": "highlight", "line": 287, "label": "测量告警" },
+    { "type": "checklist", "lines": [232, 233, 234] },
+    { "type": "checklist", "lines": [238, 239, 240] },
+    { "type": "aside", "line": 324, "title": "讨论怎么读", "text": "点赞数为抓取快照。中文帖里把「signs of life」写成「递归自我改进已启动」的，属于发帖人加码，不是 METR 原文措辞。" },
+    { "type": "summary-card", "line": 400, "label": "X 讨论速览", "items": [
+      { "title": "METR", "desc": "官方长线程：2×、1.9× AECI、删改、无瓶颈、算力核查取消" },
+      { "title": "Sam McCandlish", "desc": "承认删得多；商业+安全路线图顾虑；将发自家进度与 RSP 对照" },
+      { "title": "研究者", "desc": "Krueger 批透明度观感；Thom Wolf 说加速多发生在实验室外" },
+      { "title": "中文圈", "desc": "宝玉长复述；NFT_Chen 强调 Model 4；多家提醒勿把加速读成「聪明一倍」" }
+    ]}
+  ]
+}

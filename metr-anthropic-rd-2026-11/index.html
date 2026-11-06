@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-hf-style="magazine" data-family="magazine" data-medium="page" data-theme="indigo-porcelain" data-scheme="light" style="color-scheme:light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>METR：Anthropic AI 研发加速评估（2026 年 10 月）中文详细导读</title>
+<style>/* GZ:TOKENS:START · guizang-design v0.1.0 生成，不要手改；改设计请改 guizang-design 后运行 scripts/sync-skill.mjs */
+:root{
+  --font-display:'Playfair Display','Noto Serif SC','Source Han Serif SC','Songti SC',serif;
+  --font-serif:'Source Serif 4','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif;
+  --font-serif-zh:'Noto Serif SC','Source Han Serif SC','Songti SC','STSong',serif;
+  --font-sans:'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono','Noto Sans SC',ui-monospace,'SF Mono',Menlo,monospace;
+  --sp-1:2px;
+  --sp-2:4px;
+  --sp-3:8px;
+  --sp-4:12px;
+  --sp-5:16px;
+  --sp-6:24px;
+  --sp-7:32px;
+  --sp-8:40px;
+  --sp-9:48px;
+  --sp-10:64px;
+  --sp-11:80px;
+  --sp-12:96px;
+  --sp-13:160px;
+  --radius-none:0px;
+  --radius-xs:3px;
+  --radius-sm:6px;
+  --radius-md:14px;
+  --radius-pill:999px;
+  --ease-standard:cubic-bezier(.2,0,.38,.9);
+  --ease-expressive:cubic-bezier(.4,.14,.3,1);
+  --ease-entrance:cubic-bezier(0,0,.3,1);
+  --ease-entrance-standard:cubic-bezier(0,0,.38,.9);
+  --ease-editorial:cubic-bezier(.22,1,.36,1);
+  --ease-page:cubic-bezier(.77,0,.175,1);
+  --dur-fast-1:70ms;
+  --dur-fast-2:110ms;
+  --dur-moderate-1:150ms;
+  --dur-moderate-2:240ms;
+  --dur-slow-1:400ms;
+  --dur-slow-2:700ms;
+  --dur-page:900ms;
+  --stagger-tight:70ms;
+  --stagger-base:100ms;
+  --stagger-loose:160ms;
+  --move-sm:8px;
+  --move-md:16px;
+  --move-lg:24px;
+  --paper:#f1efea;
+  --paper-2:#e8e5de;
+  --ink:#0a0a0b;
+  --muted:#68625a;
+  --accent:#111111;
+  --accent-soft:#d8d2c6;
+  --accent-on:#f1efea;
+  --accent-ink:#111111;
+  --accent-display:#111111;
+  --accent-ink-inverse:#b2b2b2;
+  --text-primary:#0a0a0b;
+  --text-body:#2c2b2c;
+  --text-secondary:#404040;
+  --text-helper:#68625a;
+  --line-strong:#7e7d7b;
+  --line:#b7b5b2;
+  --line-subtle:#d1cfcb;
+  --ink-rgb:10,10,11;
+  --paper-rgb:241,239,234;
+  --accent-rgb:17,17,17;
+  --accent-on-rgb:241,239,234;
+  --accent-on-text:#f1efea;
+  --accent-on-text-rgb:241,239,234;
+  color-scheme:light;
+}
+[data-theme="ink-classic"]{
+  --paper:#f1efea;
+  --paper-2:#e8e5de;
+  --ink:#0a0a0b;
+  --muted:#68625a;
+  --accent:#111111;
+  --accent-soft:#d8d2c6;
+  --accent-on:#f1efea;
+  --accent-ink:#111111;
+  --accent-display:#111111;
+  --accent-ink-inverse:#b2b2b2;
+  --text-primary:#0a0a0b;
+  --text-body:#2c2b2c;
+  --text-secondary:#404040;
+  --text-helper:#68625a;
+  --line-strong:#7e7d7b;
+  --line:#b7b5b2;
+  --line-subtle:#d1cfcb;
+  --ink-rgb:10,10,11;
+  --paper-rgb:241,239,234;
+  --accent-rgb:17,17,17;
+  --accent-on-rgb:241,239,234;
+  --accent-on-text:#f1efea;
+  --accent-on-text-rgb:241,239,234;
+  color-scheme:light;
+}
+[data-theme="indigo-porcelain"]{
+  --paper:#f1f3f5;
+  --paper-2:#e4e8ec;
+  --ink:#0a1f3d;
+  --muted:#5f6d78;
+  --accent:#315d93;
+  --accent-soft:#d7e1ec;
+  --accent-on:#f1f3f5;
+  --accent-ink:#315d93;
+  --accent-display:#315d93;
+  --accent-ink-inverse:#89b9f5;
+  --text-primary:#0a1f3d;
+  --text-body:#2e415c;
+  --text-secondary:#43546d;
+  --text-helper:#5f6d78;
+  --line-strong:#808d9e;
+  --line:#b8c0ca;
+  --line-subtle:#d2d7dd;
+  --ink-rgb:10,31,61;
+  --paper-rgb:241,243,245;
+  --accent-rgb:49,93,147;
+  --accent-on-rgb:241,243,245;
+  --accent-on-text:#f1f3f5;
+  --accent-on-text-rgb:241,243,245;
+  color-scheme:light;
+}
+[data-theme="forest-ink"]{
+  --paper:#f5f1e8;
+  --paper-2:#ece7da;
+  --ink:#1a2e1f;
+  --muted:#5d665d;
+  --accent:#2e6b4f;
+  --accent-soft:#d4dfd2;
+  --accent-on:#f5f1e8;
+  --accent-ink:#2e6b4f;
+  --accent-display:#2e6b4f;
+  --accent-ink-inverse:#88c6a6;
+  --text-primary:#1a2e1f;
+  --text-body:#3d4d3e;
+  --text-secondary:#515f51;
+  --text-helper:#5d665d;
+  --line-strong:#8b9386;
+  --line:#c0c2b7;
+  --line-subtle:#d8d7cd;
+  --ink-rgb:26,46,31;
+  --paper-rgb:245,241,232;
+  --accent-rgb:46,107,79;
+  --accent-on-rgb:245,241,232;
+  --accent-on-text:#f5f1e8;
+  --accent-on-text-rgb:245,241,232;
+  color-scheme:light;
+}
+[data-theme="kraft-paper"]{
+  --paper:#eedfc7;
+  --paper-2:#e0d0b6;
+  --ink:#2a1e13;
+  --muted:#755f49;
+  --accent:#9b5a2e;
+  --accent-soft:#d5b58f;
+  --accent-on:#eedfc7;
+  --accent-ink:#804212;
+  --accent-display:#9b5a2e;
+  --accent-ink-inverse:#eda679;
+  --text-primary:#2a1e13;
+  --text-body:#493c2f;
+  --text-secondary:#5b4e3f;
+  --text-helper:#755f49;
+  --line-strong:#8f816f;
+  --line:#bfb09b;
+  --line-subtle:#d4c5af;
+  --ink-rgb:42,30,19;
+  --paper-rgb:238,223,199;
+  --accent-rgb:155,90,46;
+  --accent-on-rgb:238,223,199;
+  --accent-on-text:#ffffff;
+  --accent-on-text-rgb:255,255,255;
+  color-scheme:light;
+}
+[data-theme="dune"]{
+  --paper:#f0e6d2;
+  --paper-2:#e3d7bf;
+  --ink:#1f1a14;
+  --muted:#6f6557;
+  --accent:#8f7650;
+  --accent-soft:#d4c2a4;
+  --accent-on:#f0e6d2;
+  --accent-ink:#705833;
+  --accent-display:#8f7650;
+  --accent-ink-inverse:#cbb088;
+  --text-primary:#1f1a14;
+  --text-body:#3f3931;
+  --text-secondary:#524c42;
+  --text-helper:#6f6557;
+  --line-strong:#8a8275;
+  --line:#bdb4a3;
+  --line-subtle:#d4cab8;
+  --ink-rgb:31,26,20;
+  --paper-rgb:240,230,210;
+  --accent-rgb:143,118,80;
+  --accent-on-rgb:240,230,210;
+  --accent-on-text:#ffffff;
+  --accent-on-text-rgb:255,255,255;
+  color-scheme:light;
+}
+[data-theme="midnight-ink"]{
+  --paper:#0e0d0c;
+  --paper-2:#1a1714;
+  --ink:#ece2cf;
+  --muted:#9a8c75;
+  --accent:#d4a04a;
+  --accent-soft:#3a2a14;
+  --accent-on:#0e0d0c;
+  --accent-ink:#e0ab56;
+  --accent-display:#d4a04a;
+  --accent-ink-inverse:#875c00;
+  --text-primary:#ece2cf;
+  --text-body:#d5ccbb;
+  --text-secondary:#b9b2a3;
+  --text-helper:#b9b2a3;
+  --line-strong:#67635b;
+  --line:#373430;
+  --line-subtle:#23211f;
+  --ink-rgb:236,226,207;
+  --paper-rgb:14,13,12;
+  --accent-rgb:212,160,74;
+  --accent-on-rgb:14,13,12;
+  --accent-on-text:#0e0d0c;
+  --accent-on-text-rgb:14,13,12;
+  color-scheme:dark;
+}
+
+:root{
+  --fs-display:2.7rem;
+  --fw-display:500;
+  --lh-display:1.3;
+  --ls-display:.03em;
+  --ff-display:var(--font-serif);
+  --fst-display:normal;
+  --tt-display:none;
+  --fs-heading:1.85rem;
+  --fw-heading:500;
+  --lh-heading:1.4;
+  --ls-heading:.03em;
+  --ff-heading:var(--font-serif);
+  --fst-heading:normal;
+  --tt-heading:none;
+  --fs-subhead:1rem;
+  --fw-subhead:500;
+  --lh-subhead:1.4;
+  --ls-subhead:.02em;
+  --ff-subhead:var(--font-serif);
+  --fst-subhead:normal;
+  --tt-subhead:none;
+  --fs-lead:1.05rem;
+  --fw-lead:400;
+  --lh-lead:1.7;
+  --ls-lead:0;
+  --ff-lead:var(--font-sans);
+  --fst-lead:normal;
+  --tt-lead:none;
+  --fs-body:1.0625rem;
+  --fw-body:400;
+  --lh-body:1.85;
+  --ls-body:0;
+  --ff-body:var(--font-serif);
+  --fst-body:normal;
+  --tt-body:none;
+  --fs-small:0.9rem;
+  --fw-small:400;
+  --lh-small:1.6;
+  --ls-small:0;
+  --ff-small:var(--font-serif);
+  --fst-small:normal;
+  --tt-small:none;
+  --fs-caption:0.8125rem;
+  --fw-caption:400;
+  --lh-caption:1.6;
+  --ls-caption:0;
+  --ff-caption:var(--font-serif);
+  --fst-caption:normal;
+  --tt-caption:none;
+  --fs-label:0.8125rem;
+  --fw-label:500;
+  --lh-label:1.3;
+  --ls-label:.14em;
+  --ff-label:var(--font-mono);
+  --fst-label:normal;
+  --tt-label:uppercase;
+  --fs-meta:0.75rem;
+  --fw-meta:400;
+  --lh-meta:1.3;
+  --ls-meta:.06em;
+  --ff-meta:var(--font-mono);
+  --fst-meta:normal;
+  --tt-meta:uppercase;
+  --fs-quote:1.6rem;
+  --fw-quote:400;
+  --lh-quote:1.6;
+  --ls-quote:-.01em;
+  --ff-quote:var(--font-serif);
+  --fst-quote:normal;
+  --tt-quote:none;
+  --fs-num-xl:3rem;
+  --fw-num-xl:500;
+  --lh-num-xl:1;
+  --ls-num-xl:0;
+  --ff-num-xl:var(--font-display);
+  --fst-num-xl:normal;
+  --tt-num-xl:none;
+  --fs-display-zh:2.7rem;
+  --fw-display-zh:500;
+  --lh-display-zh:1.3;
+  --ls-display-zh:.03em;
+  --ff-display-zh:var(--font-serif);
+  --fst-display-zh:normal;
+  --tt-display-zh:none;
+  --fs-title:2.7rem;
+  --fw-title:500;
+  --lh-title:1.3;
+  --ls-title:.03em;
+  --ff-title:var(--font-serif);
+  --fst-title:normal;
+  --tt-title:none;
+  --fs-title-zh:2.7rem;
+  --fw-title-zh:500;
+  --lh-title-zh:1.3;
+  --ls-title-zh:.03em;
+  --ff-title-zh:var(--font-serif);
+  --fst-title-zh:normal;
+  --tt-title-zh:none;
+  --fs-num-l:3rem;
+  --fw-num-l:500;
+  --lh-num-l:1;
+  --ls-num-l:0;
+  --ff-num-l:var(--font-display);
+  --fst-num-l:normal;
+  --tt-num-l:none;
+  --fs-num-m:3rem;
+  --fw-num-m:500;
+  --lh-num-m:1;
+  --ls-num-m:0;
+  --ff-num-m:var(--font-display);
+  --fst-num-m:normal;
+  --tt-num-m:none;
+  --canvas-container:1200px;
+  --canvas-margin:80px;
+  --canvas-gutter:20px;
+  --canvas-measure:calc(30 * 1.0625rem);
+  --canvas-wide:920px;
+}
+.gz-t-display{font-family:var(--ff-display);font-size:var(--fs-display);font-weight:var(--fw-display);line-height:var(--lh-display);letter-spacing:var(--ls-display);font-style:var(--fst-display);text-transform:var(--tt-display)}
+.gz-t-heading{font-family:var(--ff-heading);font-size:var(--fs-heading);font-weight:var(--fw-heading);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);font-style:var(--fst-heading);text-transform:var(--tt-heading)}
+.gz-t-subhead{font-family:var(--ff-subhead);font-size:var(--fs-subhead);font-weight:var(--fw-subhead);line-height:var(--lh-subhead);letter-spacing:var(--ls-subhead);font-style:var(--fst-subhead);text-transform:var(--tt-subhead)}
+.gz-t-lead{font-family:var(--ff-lead);font-size:var(--fs-lead);font-weight:var(--fw-lead);line-height:var(--lh-lead);letter-spacing:var(--ls-lead);font-style:var(--fst-lead);text-transform:var(--tt-lead)}
+.gz-t-body{font-family:var(--ff-body);font-size:var(--fs-body);font-weight:var(--fw-body);line-height:var(--lh-body);letter-spacing:var(--ls-body);font-style:var(--fst-body);text-transform:var(--tt-body)}
+.gz-t-small{font-family:var(--ff-small);font-size:var(--fs-small);font-weight:var(--fw-small);line-height:var(--lh-small);letter-spacing:var(--ls-small);font-style:var(--fst-small);text-transform:var(--tt-small)}
+.gz-t-caption{font-family:var(--ff-caption);font-size:var(--fs-caption);font-weight:var(--fw-caption);line-height:var(--lh-caption);letter-spacing:var(--ls-caption);font-style:var(--fst-caption);text-transform:var(--tt-caption)}
+.gz-t-label{font-family:var(--ff-label);font-size:var(--fs-label);font-weight:var(--fw-label);line-height:var(--lh-label);letter-spacing:var(--ls-label);font-style:var(--fst-label);text-transform:var(--tt-label)}
+.gz-t-meta{font-family:var(--ff-meta);font-size:var(--fs-meta);font-weight:var(--fw-meta);line-height:var(--lh-meta);letter-spacing:var(--ls-meta);font-style:var(--fst-meta);text-transform:var(--tt-meta)}
+.gz-t-quote{font-family:var(--ff-quote);font-size:var(--fs-quote);font-weight:var(--fw-quote);line-height:var(--lh-quote);letter-spacing:var(--ls-quote);font-style:var(--fst-quote);text-transform:var(--tt-quote)}
+.gz-t-num-xl{font-family:var(--ff-num-xl);font-size:var(--fs-num-xl);font-weight:var(--fw-num-xl);line-height:var(--lh-num-xl);letter-spacing:var(--ls-num-xl);font-style:var(--fst-num-xl);text-transform:var(--tt-num-xl)}
+.gz-t-display-zh{font-family:var(--ff-display-zh);font-size:var(--fs-display-zh);font-weight:var(--fw-display-zh);line-height:var(--lh-display-zh);letter-spacing:var(--ls-display-zh);font-style:var(--fst-display-zh);text-transform:var(--tt-display-zh)}
+.gz-t-title{font-family:var(--ff-title);font-size:var(--fs-title);font-weight:var(--fw-title);line-height:var(--lh-title);letter-spacing:var(--ls-title);font-style:var(--fst-title);text-transform:var(--tt-title)}
+.gz-t-title-zh{font-family:var(--ff-title-zh);font-size:var(--fs-title-zh);font-weight:var(--fw-title-zh);line-height:var(--lh-title-zh);letter-spacing:var(--ls-title-zh);font-style:var(--fst-title-zh);text-transform:var(--tt-title-zh)}
+.gz-t-num-l{font-family:var(--ff-num-l);font-size:var(--fs-num-l);font-weight:var(--fw-num-l);line-height:var(--lh-num-l);letter-spacing:var(--ls-num-l);font-style:var(--fst-num-l);text-transform:var(--tt-num-l)}
+.gz-t-num-m{font-family:var(--ff-num-m);font-size:var(--fs-num-m);font-weight:var(--fw-num-m);line-height:var(--lh-num-m);letter-spacing:var(--ls-num-m);font-style:var(--fst-num-m);text-transform:var(--tt-num-m)}
+
+:lang(zh){line-break:strict;text-spacing-trim:normal;text-autospace:normal;overflow-wrap:break-word}
+:lang(zh) .gz-prose em:not(:lang(en)){font-style:normal;text-emphasis:filled dot;text-emphasis-position:under right}
+.gz-tnum{font-variant-numeric:tabular-nums}
+
+/* 歸藏设计系统 · 共享组件
+ *
+ * 一份结构，三种介质：根节点 <html data-family="magazine|swiss" data-medium="slide|card|page">。
+ * 这里只管布局、颜色和间距；字号、字重、行高一律由 gz-t-<角色> 类提供，
+ * 所以同一个组件放进 PPT、卡片、网页会自动换成各自的字号。
+ * 颜色只用语义 token（--text-* / --line-* / --accent*），换主题不需要改组件。
+ */
+
+/* ---------- 家族差异 ---------- */
+/* 单张卡片 / 单页换主题（[data-theme]）或反色（[data-surface]）时，线条变量要在那一层重新计算，否则沿用根节点的颜色 */
+[data-family="magazine"], [data-family="magazine"] [data-theme], [data-family="magazine"] [data-surface] { --img-pos: center top; --rule: 1px solid var(--line-strong); --rule-strong: 1px solid var(--line-strong) }
+[data-family="swiss"], [data-family="swiss"] [data-theme], [data-family="swiss"] [data-surface] { --img-pos: center center; --rule: 1px solid var(--line); --rule-strong: 2px solid var(--ink) }
+
+/* ---------- 表面：反色块里文字角色跟着换 ---------- */
+[data-surface="ink"] {
+  background: var(--ink); color: var(--paper);
+  --text-primary: var(--paper); --text-body: rgba(var(--paper-rgb), .86); --text-secondary: rgba(var(--paper-rgb), .72);
+  --text-helper: rgba(var(--paper-rgb), .62); --line: rgba(var(--paper-rgb), .22); --line-strong: rgba(var(--paper-rgb), .45);
+  --accent-ink: var(--accent-ink-inverse); --accent-display: var(--accent-ink-inverse); --rule-strong: 2px solid var(--paper);
+}
+[data-family="magazine"] [data-surface="ink"], [data-family="magazine"][data-surface="ink"] { --rule-strong: 1px solid rgba(var(--paper-rgb), .45) }
+[data-surface="accent"] {
+  background: var(--accent); color: var(--accent-on);
+  --text-primary: var(--accent-on); --text-body: rgba(var(--accent-on-rgb), .88); --text-secondary: rgba(var(--accent-on-rgb), .78);
+  --text-helper: rgba(var(--accent-on-rgb), .7); --line: rgba(var(--accent-on-rgb), .3); --line-strong: rgba(var(--accent-on-rgb), .55);
+  --accent-ink: var(--accent-on); --accent-display: var(--accent-on); --rule-strong: 2px solid var(--accent-on);
+}
+[data-surface="paper-2"] { background: var(--paper-2) }
+
+/* 强调色文字：小字用 accent-ink，大字 / 大数字用 accent-display（浅色强调色在纸上会自动加深；反色块里自动切换） */
+.gz-c-accent { color: var(--accent-ink) }
+.gz-c-accent-display { color: var(--accent-display) }
+
+/* ---------- 页眉页脚 chrome ---------- */
+.gz-chrome { display: flex; justify-content: space-between; align-items: baseline; gap: var(--sp-6); color: var(--text-helper); border-top: var(--rule); padding-top: var(--sp-4) }
+.gz-chrome[data-pos="top"] { border-top: 0; border-bottom: var(--rule); padding: 0 0 var(--sp-4) }
+.gz-chrome__group { display: flex; gap: var(--sp-5); min-width: 0 }
+.gz-chrome__accent { color: var(--accent-ink) }
+
+/* ---------- 封面 cover ---------- */
+.gz-cover { display: flex; flex-direction: column; gap: var(--sp-6); color: var(--text-primary) }
+.gz-cover__kicker { color: var(--text-helper) }
+[data-family="swiss"] .gz-cover__kicker { color: var(--accent-ink) }
+.gz-cover__body { width: 100%; container-type: inline-size }
+/* 标题按最长一行的字数自动收字号：--chars 由 components/render.mjs 算好写进 style；手写时填最长一行的字数（中文 1、西文约 0.56）。上限仍是 token 定的展示字号 */
+.gz-cover__title { margin: 0; font-size: min(var(--fs-display-zh), calc(100cqi / var(--chars, 1) * .94)) }
+.gz-cover__rule { width: 96px; height: 0; border-top: 2px solid var(--accent) }
+[data-family="swiss"] .gz-cover__rule { border-top-width: 3px }
+.gz-cover__sub { margin: 0; color: var(--text-body); max-width: 32em }
+.gz-cover__meta { margin-top: auto }
+/* 幻灯片、卡片：封面撑满画布，标题压在下半部 */
+[data-medium="slide"] .gz-cover, [data-medium="card"] .gz-cover { height: 100% }
+[data-medium="slide"] .gz-cover__body, [data-medium="card"] .gz-cover__body { margin-top: auto; display: flex; flex-direction: column; gap: var(--sp-7) }
+[data-medium="slide"] .gz-cover__meta, [data-medium="card"] .gz-cover__meta { margin-top: var(--sp-10) }
+/* 网页：杂志风居中，瑞士风左对齐 */
+[data-medium="page"] .gz-cover { padding: var(--sp-11) 0 var(--sp-9); border-bottom: var(--rule) }
+[data-medium="page"] .gz-cover__body { display: flex; flex-direction: column; gap: var(--sp-6) }
+[data-medium="page"][data-family="magazine"] .gz-cover { align-items: center; text-align: center }
+[data-medium="page"][data-family="magazine"] .gz-cover__body { align-items: center }
+[data-medium="page"] .gz-cover__meta { margin-top: var(--sp-6); border-top: 0; padding-top: 0; justify-content: center }
+[data-medium="page"][data-family="swiss"] .gz-cover__meta { justify-content: flex-start }
+
+/* ---------- 大数字 stat ---------- */
+.gz-stats { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: var(--sp-9) var(--sp-7) }
+.gz-stats[data-count="1"] { --cols: 1 } .gz-stats[data-count="2"] { --cols: 2 } .gz-stats[data-count="4"] { --cols: 4 }
+[data-medium="card"] .gz-stats { --cols: 2 }
+[data-medium="card"] .gz-stats[data-count="1"], [data-medium="card"] .gz-stats[data-count="3"] { --cols: 1 }
+.gz-stat { display: flex; flex-direction: column; gap: var(--sp-4); border-top: var(--rule-strong); padding-top: var(--sp-5); min-width: 0 }
+.gz-stat__label { color: var(--text-helper) }
+.gz-stat__value { display: flex; align-items: baseline; gap: .06em; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap }
+.gz-stat__unit { font-size: .4em; font-weight: 500; letter-spacing: 0; color: var(--text-secondary) }
+.gz-stat.is-accent .gz-stat__num { color: var(--accent-ink) }
+.gz-stat__note { margin: 0; color: var(--text-secondary); max-width: 24em }
+[data-medium="card"] .gz-stats[data-count="3"] .gz-stat { display: grid; grid-template-columns: auto 1fr; align-items: end; column-gap: var(--sp-7) }
+[data-medium="card"] .gz-stats[data-count="3"] .gz-stat__label { grid-column: 1 / -1 }
+[data-medium="card"] .gz-stats[data-count="3"] .gz-stat__note { padding-bottom: .6em }
+
+/* ---------- 引言 quote ---------- */
+.gz-quote { margin: 0; display: flex; flex-direction: column; gap: var(--sp-7) }
+.gz-quote__text { margin: 0; color: var(--text-primary); text-wrap: balance }
+.gz-quote__text p { margin: 0; text-wrap: balance }
+[data-family="magazine"] .gz-quote__text::before { content: "\201C"; display: block; font-family: var(--font-display); font-style: normal; color: var(--accent); font-size: 1.8em; line-height: 1; height: .55em }
+[data-family="swiss"] .gz-quote { border-top: var(--rule-strong); padding-top: var(--sp-7) }
+.gz-quote__source { color: var(--text-helper) }
+[data-medium="page"][data-family="magazine"] .gz-quote { align-items: center; text-align: center; padding: var(--sp-9) 0 }
+
+/* ---------- 流程 process：幻灯片 / 网页横排，卡片竖排 ---------- */
+.gz-process { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); gap: var(--sp-7) }
+.gz-process__step { display: flex; flex-direction: column; gap: var(--sp-4); border-top: var(--rule-strong); padding-top: var(--sp-5); min-width: 0 }
+.gz-process__nb { color: var(--accent-ink) }
+.gz-process__title { margin: 0 }
+.gz-process__desc { margin: 0; color: var(--text-secondary) }
+[data-medium="card"] .gz-process { grid-template-columns: 1fr; gap: 0; border-bottom: var(--rule) }
+[data-medium="card"] .gz-process__step { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: var(--sp-6); row-gap: var(--sp-3); padding: var(--sp-7) 0 }
+[data-medium="card"] .gz-process__step + .gz-process__step { border-top: var(--rule) }
+[data-medium="card"] .gz-process__nb { grid-row: span 2 }
+[data-medium="page"] .gz-process { --n: 2; row-gap: var(--sp-8) }
+
+/* ---------- 对比 compare：左右分栏，卡片上下叠 ---------- */
+.gz-compare { display: grid; grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr); gap: 0 var(--sp-9) }
+.gz-compare__rule { background: var(--line-strong) }
+.gz-compare__side { display: flex; flex-direction: column; gap: var(--sp-5); min-width: 0 }
+.gz-compare__tag { color: var(--text-helper) }
+.gz-compare__side[data-side="after"] .gz-compare__tag { color: var(--accent-ink) }
+.gz-compare__title { margin: 0 }
+.gz-compare__side[data-side="before"] .gz-compare__title { color: var(--text-secondary) }
+.gz-compare__desc { margin: 0; color: var(--text-secondary) }
+.gz-compare__list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--sp-3); color: var(--text-body) }
+.gz-compare__list li { padding-left: 1.2em; position: relative }
+.gz-compare__list li::before { content: ""; position: absolute; left: 0; top: .72em; width: .5em; border-top: 1px solid currentColor }
+[data-family="swiss"] .gz-compare__side[data-side="after"][data-surface] { padding: var(--sp-8) }
+[data-medium="card"] .gz-compare { grid-template-columns: 1fr; gap: var(--sp-8) 0 }
+[data-medium="card"] .gz-compare__rule { height: 1px }
+
+/* ---------- 图框 figure：照片 cover 裁切，截图 contain 放在底台上 ---------- */
+.gz-figure { margin: 0; display: flex; flex-direction: column; gap: var(--sp-4); min-width: 0 }
+.gz-figure__well { position: relative; aspect-ratio: var(--ratio, 16 / 10); overflow: hidden; background: var(--paper-2) }
+.gz-figure__well > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--img-pos) }
+.gz-figure[data-ratio="16x9"] { --ratio: 16 / 9 } .gz-figure[data-ratio="16x10"] { --ratio: 16 / 10 } .gz-figure[data-ratio="4x3"] { --ratio: 4 / 3 }
+.gz-figure[data-ratio="3x2"] { --ratio: 3 / 2 } .gz-figure[data-ratio="1x1"] { --ratio: 1 } .gz-figure[data-ratio="3x4"] { --ratio: 3 / 4 } .gz-figure[data-ratio="21x9"] { --ratio: 21 / 9 }
+.gz-figure[data-kind="screenshot"] .gz-figure__well { display: flex; align-items: center; justify-content: center; padding: var(--inset, var(--sp-8)) }
+.gz-figure[data-kind="screenshot"] .gz-figure__well > img { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: var(--radius-sm); box-shadow: 0 0 0 1px var(--line) }
+[data-family="magazine"] .gz-figure[data-kind="screenshot"] .gz-figure__well > img { box-shadow: 0 0 0 1px var(--line), 0 18px 40px -24px rgba(var(--ink-rgb), .45) }
+[data-family="swiss"] .gz-figure[data-kind="screenshot"] .gz-figure__well { background: var(--grey-1); border-top: 3px solid var(--accent) }
+[data-family="swiss"] .gz-figure[data-kind="screenshot"] .gz-figure__well > img { border-radius: 0 }
+.gz-figure__cap { color: var(--text-helper); display: flex; gap: var(--sp-4) }
+.gz-figure__idx { color: var(--accent-ink); flex: none }
+
+/* ---------- 图片网格 gallery ---------- */
+.gz-gallery { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: var(--sp-7) var(--sp-6) }
+[data-medium="card"] .gz-gallery { --cols: 2 }
+[data-medium="card"] .gz-gallery[data-count="3"] > :first-child { grid-column: 1 / -1; --ratio: 16 / 9 }
+
+/* ---------- 条目清单 ledger ---------- */
+.gz-ledger { list-style: none; margin: 0; padding: 0; border-top: var(--rule-strong) }
+.gz-ledger__row { display: grid; grid-template-columns: var(--nb-w, 3.2em) minmax(0, 1fr) auto; column-gap: var(--sp-6); align-items: baseline; padding: var(--sp-6) 0; border-bottom: var(--rule) }
+.gz-ledger__nb { color: var(--accent-ink) }
+.gz-ledger__title { margin: 0 }
+.gz-ledger__note { margin: var(--sp-2) 0 0; color: var(--text-secondary) }
+.gz-ledger__value { color: var(--text-helper); text-align: right; white-space: nowrap }
+[data-medium="card"] .gz-ledger__row { --nb-w: 72px; padding: var(--sp-7) 0 }
+
+/* 歸藏设计系统 · 纹理与特效图层（纯 CSS，颜色全部来自 token）
+ * 来源：PPT 瑞士风 .dots / .dot-mat / .ring-mat / .cross-mat / .hatch，卡片杂志风 .grain / .paper-wash。
+ */
+
+/* 特效画布：铺满父容器、在内容下面、不挡点击。父容器需要 position: relative */
+.gz-effect { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; z-index: 0 }
+.gz-layer-content { position: relative; z-index: 1 }
+
+/* 点阵：前景色画点，跟随所在表面的文字色 */
+.gz-dots      { background-image: radial-gradient(currentColor 1px, transparent 1.2px); background-size: 12px 12px; opacity: .18 }
+.gz-dots-fine { background-image: radial-gradient(currentColor .8px, transparent 1px); background-size: 8px 8px; opacity: .14 }
+.gz-dots-bold { background-image: radial-gradient(currentColor 1.4px, transparent 1.6px); background-size: 18px 18px; opacity: .22 }
+
+.gz-dot-mat         { --mat: 14px; background-image: radial-gradient(currentColor 1.4px, transparent 1.6px); background-size: var(--mat) var(--mat); opacity: .5 }
+.gz-dot-mat.is-lg   { --mat: 22px } .gz-dot-mat.is-xl { --mat: 34px }
+.gz-dot-mat.is-dense{ --mat: 9px; opacity: .62 }
+.gz-ring-mat        { --mat: 18px; background-image: radial-gradient(circle, transparent 2px, currentColor 2px, currentColor 2.7px, transparent 2.9px); background-size: var(--mat) var(--mat); opacity: .55 }
+.gz-ring-mat.is-lg  { --mat: 28px }
+.gz-cross-mat       { --mat: 22px; background: currentColor; opacity: .42;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Cpath d='M8 8l6 6M14 8l-6 6' stroke='%23000' stroke-width='1.4'/%3E%3C/svg%3E") 0 0 / var(--mat) var(--mat);
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Cpath d='M8 8l6 6M14 8l-6 6' stroke='%23000' stroke-width='1.4'/%3E%3C/svg%3E") 0 0 / var(--mat) var(--mat) }
+.gz-cross-mat.is-lg { --mat: 32px }
+.gz-hatch           { background-image: repeating-linear-gradient(135deg, currentColor 0 1px, transparent 1px 8px); opacity: .55 }
+
+/* 纸张颗粒与墨色晕染：杂志风卡片的「氛围层」，叠在特效画布上、内容下 */
+.gz-grain      { position: absolute; inset: 0; pointer-events: none; z-index: 0; mix-blend-mode: multiply; opacity: .35;
+                 background-image: radial-gradient(rgba(0,0,0,.045) 1px, transparent 1px); background-size: 3px 3px }
+[data-scheme="dark"] .gz-grain, .gz-grain.is-dark { mix-blend-mode: screen; opacity: .26; background-image: radial-gradient(rgba(255,244,214,.10) 1px, transparent 1px) }
+.gz-paper-wash { position: absolute; inset: 0; pointer-events: none; z-index: 0;
+                 background: linear-gradient(180deg, rgba(var(--ink-rgb), .02), rgba(var(--ink-rgb), .05) 60%, rgba(var(--ink-rgb), .08)) }
+.gz-ink-vignette { position: absolute; inset: 0; pointer-events: none; z-index: 0;
+                 background: radial-gradient(circle at 18% 12%, rgba(var(--ink-rgb), .10), transparent 34%), radial-gradient(circle at 82% 80%, rgba(var(--accent-rgb), .10), transparent 38%) }
+
+/* PPT 杂志风：WebGL 背景上的纸 / 墨蒙版，保证文字可读（原 .slide.light/.dark::before） */
+.gz-veil       { position: absolute; inset: 0; pointer-events: none; z-index: 0; backdrop-filter: blur(3px); background: rgba(var(--paper-rgb), .78) }
+.gz-veil.is-ink{ background: rgba(var(--ink-rgb), .78) }
+.gz-veil.is-hero { backdrop-filter: none; background: rgba(var(--paper-rgb), .16) }
+.gz-veil.is-hero.is-ink { background: rgba(var(--ink-rgb), .12) }
+
+@media (prefers-reduced-motion: reduce) { .gz-effect { animation: none } }
+
+/* GZ:TOKENS:END */
+</style>
+<style>  /* ========================================
+     MAGAZINE — literary / editorial layout
+     One centred reading axis, serif body, ornament section numbers,
+     centred pull quotes, book-style three-line tables.
+     ui.css is inlined after this file.
+     ======================================== */
+
+  /* ========================================
+     TOKENS
+     ======================================== */
+  /* Colours, fonts, type roles and spacing come from the design system
+     (assets/gz-magazine.css, inlined before this file; theme = <html data-theme>).
+     The names below are this stylesheet's own vocabulary, mapped onto its roles. */
+  :root {
+    --fg: var(--text-primary);
+    --fg-secondary: var(--text-secondary);
+    --fg-tertiary: var(--text-helper);
+    --bg: var(--paper);
+    --bg-card: var(--paper-2);
+    --bg-quote: var(--paper-2);
+    --bg-highlight: var(--ink);
+    --fg-highlight: var(--paper);
+    --border: var(--line-subtle);
+    --border-light: rgba(var(--ink-rgb), .08);
+    --tbl-line: rgba(var(--ink-rgb), .09);
+    --quote-tint: rgba(var(--ink-rgb), .03);
+    --hc-mute: rgba(var(--ink-rgb), .25);
+    /* UI and table text: Latin sans first (Inter), then the CJK sans */
+    --font-sans: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+    --font-kai: "LXGW WenKai", "Kaiti SC", "STKaiti", "KaiTi", "BiauKai", "FangSong", "STFangsong", var(--font-serif, serif);
+    --measure: 1200px;
+    --gutter: 20px;
+    --columns: 12;
+    --margin: 80px;
+    --col: calc(30 * 1.0625rem);   /* reading column: 30 CJK characters at 17px */
+    --wide: 920px;                 /* breakout width for media and emphasis blocks */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-2xl: 72px;
+    --space-3xl: 96px;
+    /* CJK body text — see references/design-rules.md §中文排版 */
+    --text-size: var(--fs-body);
+    --text-leading: var(--lh-body);
+    --text-measure: 36em;
+    --para-gap: 1em;
+  }
+
+  /* zh documents: the CJK face comes first, so digits and Latin inside Chinese text use its own
+     glyphs and sit on the same baseline (Source Serif 4 / Inter digits look sunk next to Noto CJK).
+     English documents keep the Latin-first stacks. The font picker overrides --font-serif inline. */
+  :root:lang(zh) {
+    --font-serif: 'Noto Serif SC', 'Source Serif 4', 'Source Han Serif SC', 'Songti SC', 'STSong', Georgia, serif;
+    --font-sans: 'Noto Sans SC', 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  }
+
+  /* Dark theme (midnight-ink): every colour above already follows the theme */
+  :root[data-scheme="dark"] img { opacity: 0.94; }
+
+  /* ========================================
+     RESET & BASE
+     ======================================== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.8;
+    letter-spacing: 0.01em; /* Latin only; :lang(zh) resets to 0 */
+  }
+
+  :lang(zh) body {
+    letter-spacing: 0;              /* 汉字默认密排，不额外加字距 */
+    line-break: strict;             /* 避头尾：句读、闭括号等不出现在行首 */
+    word-break: normal;
+    overflow-wrap: break-word;      /* 长 URL / 长英文词允许断开，避免撑破版心 */
+    text-spacing-trim: normal;      /* 相邻标点挤压（Chrome 123+，需字体带 chws/halt） */
+    hanging-punctuation: allow-end; /* 行尾点号悬挂（目前仅 Safari） */
+    font-kerning: normal;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-on-text);
+  }
+
+  /* ========================================
+     LAYOUT — one centred column
+     Every block in .section / .hero spans the full 12-col grid and is
+     centred at --col; media and emphasis blocks break out to --wide.
+     ======================================== */
+  .container {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--margin);
+  }
+
+  .section,
+  .hero,
+  .container > footer,
+  .divider-dot {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    column-gap: var(--gutter);
+  }
+
+  .section > *,
+  .hero > * {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: var(--col);
+  }
+
+  .section > .figure-card,
+  .section > .img-row,
+  .section > .img-strip-wrap,
+  .section > .gallery,
+  .section > .gallery-hint,
+  .section > .pullquote,
+  .section > .highlight-card,
+  .section > .table-wrap,
+  .section > .embed-card,
+  .section > .hchart {
+    max-width: var(--wide);
+  }
+
+  /* ========================================
+     MASTHEAD — one line: tags · author · date · reading time
+     ======================================== */
+  .doc-chrome.doc-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0;
+    max-width: min(var(--wide, 920px), 100%);
+    margin: 0 auto;
+    padding: 28px 0 12px !important; /* beats ui.css print `.doc-chrome` padding */
+    border-bottom: 1px solid rgba(var(--ink-rgb), .16);
+    font-family: var(--font-serif);
+    font-size: var(--fs-label);
+    letter-spacing: .04em;
+    color: var(--fg-secondary, var(--fg));
+    text-align: center;
+    white-space: normal;
+  }
+  .doc-line > span { white-space: nowrap; }
+  .doc-line .dl-sep { margin: 0 .7em; opacity: .5; }
+  .doc-line .dl-tag { color: var(--accent-ink, var(--accent)); }
+
+  /* ========================================
+     HERO
+     ======================================== */
+  .hero {
+    padding: 72px 0 24px;           /* the ornament closes the hero; no second rule */
+    text-align: center;
+  }
+
+  /* Ornament under the title: Lucide "sparkle" (ISC licence), thin stroke, accent colour */
+  .hero::after {
+    content: "";
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 18px;
+    height: 18px;
+    margin-top: 36px;
+    background: var(--accent-ink, var(--accent));
+    -webkit-mask: var(--orn-sparkle) center / contain no-repeat;
+    mask: var(--orn-sparkle) center / contain no-repeat;
+  }
+  :root {
+    --orn-sparkle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.1' stroke-linejoin='round'%3E%3Cpath d='M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z'/%3E%3C/svg%3E");
+  }
+
+  .hero h1 {
+    font-family: var(--font-serif);
+    font-size: var(--fs-display);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.03em; /* zh too: headings are deliberately tracked out */
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-lead);
+    color: var(--fg-secondary);
+    line-height: 1.7;
+    margin: 18px auto 0;
+  }
+
+  /* ========================================
+     SECTION + SECTION HEADER
+     Header = centred "✦✦✦ 04 ✦✦✦" ornament number + title.
+     ======================================== */
+  .section {
+    padding: 72px 0 var(--space-lg);
+  }
+
+  .section-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    padding-top: 6px;
+    margin-bottom: 18px;
+    font-family: var(--font-serif);
+    font-size: .9rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent-ink, var(--accent));
+  }
+  .sn-sym .sn-side { flex: 1 1 0; display: inline-flex; align-items: center; gap: 6px; }
+  .sn-sym .sn-l { justify-content: flex-end; }
+  .sn-sym .sn-r { justify-content: flex-start; }
+  .sn-sym .sn-num {
+    flex: none;
+    margin: 0 14px;
+    padding-left: .12em; /* cancels the trailing letter-spacing: optical centring */
+    font-size: 1.05rem;
+    letter-spacing: .12em;
+    line-height: 1;
+  }
+  .sn-sym .sn-star { display: inline-block; line-height: 1; }
+  .sn-star.s1 { font-size: 0.95rem; opacity: 0.9; }
+  .sn-star.s2 { font-size: 0.72rem; opacity: 0.65; }
+  .sn-star.s3 { font-size: 0.52rem; opacity: 0.42; }
+
+  .section > h2 {
+    font-family: var(--font-serif);
+    font-size: var(--fs-heading);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .section > h3 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  /* ui.js makes headings contenteditable, whose UA style resets line-break; restore 避头尾 */
+  :lang(zh) h1, :lang(zh) h2, :lang(zh) h3 { line-break: strict; }
+
+  /* Thematic breaks (---) are never drawn: the section rhythm already separates */
+  .divider { display: none; }
+
+  /* ========================================
+     PROSE
+     ======================================== */
+  p {
+    margin-bottom: var(--space-md);
+    font-size: 0.95rem;
+    line-height: 1.85;
+  }
+
+  .section p,
+  .section li {
+    font-family: var(--font-serif);
+    overflow-wrap: break-word;
+  }
+
+  .section > p,
+  .section li {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    text-align: justify;
+  }
+
+  :lang(zh) .section > p,
+  :lang(zh) .section li {
+    font-size: var(--text-size);
+    line-height: var(--text-leading);
+    font-weight: 400;
+  }
+  :lang(zh) .section > p {
+    margin-bottom: var(--para-gap);
+    text-align: justify;            /* clreq §6.2：中文正文原则上两端对齐 */
+    text-justify: inter-character;
+  }
+  :lang(zh) .section li {
+    margin-bottom: 0.35em;
+    text-align: start;
+  }
+
+  /* Links / URLs / code / reference lists: start-aligned, so justify doesn't stretch the line */
+  .section > p:has(a.url, a[href^="http"], code),
+  .section.refs p,
+  .section.refs li {
+    text-align: start;
+    text-justify: auto;
+  }
+  /* English paragraphs stay justified but hyphenate to avoid rivers */
+  .section > p:lang(en) { hyphens: auto; -webkit-hyphens: auto; }
+
+  strong {
+    font-weight: 600;
+    color: var(--fg);
+  }
+
+  a {
+    color: var(--fg);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+  }
+  .section a.url { overflow-wrap: anywhere; word-break: break-word; }
+
+  /* 汉字没有真正的斜体：*强调* 用着重号（clreq §5.3.1：横排置于字下）；斜体只给拉丁文 */
+  :lang(zh) em {
+    font-style: normal;
+    -webkit-text-emphasis: filled dot; text-emphasis: filled dot;
+    -webkit-text-emphasis-position: under right; text-emphasis-position: under right;
+  }
+  :lang(zh) em:lang(en), :lang(zh) code em { text-emphasis: none; -webkit-text-emphasis: none; }
+  blockquote *, .pullquote * { font-style: normal; }
+  :lang(en) em, em:lang(en), i:lang(en) { font-style: italic; }
+
+  /* 破折号：两字线不断开；——插入语—— 轻度强调 */
+  .dash { white-space: nowrap; letter-spacing: 0; }
+  .dash-em { color: var(--fg); font-weight: 600; }
+
+  /* 中西文间距：render.mjs 插入 .hf-sp；支持 text-autospace 的浏览器用原生间距 */
+  .hf-sp { white-space: normal; }
+  @supports (text-autospace: normal) {
+    :lang(zh) body { text-autospace: normal; }
+    .hf-sp { display: none; }
+  }
+
+  /* ========================================
+     LISTS
+     ======================================== */
+  ul, ol {
+    margin: var(--space-md) 0 var(--space-lg);
+    padding-left: var(--space-lg);
+  }
+
+  li { margin-bottom: var(--space-sm); }
+
+  li::marker { color: var(--accent-ink, var(--accent)); }
+
+  /* Footnote section: smaller, secondary colour. .section.section-footnote matches the
+     specificity of :lang(zh) .section li and comes later, so it also applies to zh docs */
+  .section.section-footnote li {
+    font-size: var(--fs-caption);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+    color: var(--fg-secondary);
+  }
+  .section.section-footnote > h2 { font-size: var(--fs-subhead); }
+
+  .checklist {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .checklist li {
+    padding-left: 24px;
+    position: relative;
+  }
+
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 0;
+  }
+
+  /* ========================================
+     BLOCKQUOTE — hairlines above and below, kai body, no fill
+     ======================================== */
+  blockquote {
+    margin: var(--space-lg) 0;
+    padding: 4px 0 4px 24px;
+    border-left: 1px solid var(--accent);
+    border-radius: 0;
+  }
+
+  .section > blockquote {
+    margin: 32px auto;
+    padding: 18px 0.25em;
+    border-left: 0;
+    border-top: 1px solid rgba(var(--ink-rgb), .18);
+    border-bottom: 1px solid rgba(var(--ink-rgb), .18);
+    font-family: var(--font-kai);
+    font-size: var(--fs-body);
+    line-height: 1.9;
+    color: var(--fg);
+  }
+
+  /* Quote text is kai (LXGW WenKai / system kai, serif fallback) at body size */
+  blockquote p {
+    font-family: var(--font-kai);
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--fg);
+    margin-bottom: 0;
+  }
+  blockquote > p + p { margin-top: 0.6em; }
+
+  blockquote .bq-nested {
+    margin: 10px 0;
+    padding: 2px 0 2px 1em;
+    border-left: 1px solid rgba(var(--ink-rgb), .2);
+    background: var(--quote-tint);
+  }
+
+  .bq-cite {
+    margin-top: 0.7em;
+    font-family: var(--font-serif);
+    font-size: 0.82rem;
+    color: var(--fg-secondary, var(--fg));
+    text-align: right;
+  }
+
+  /* ========================================
+     PULL QUOTE — centred, big opening mark, hairlines
+     ======================================== */
+  .pullquote {
+    position: relative;
+    margin: var(--space-lg) 0;
+    padding: 44px 48px 36px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+  .section > .pullquote:last-child { margin-bottom: 0; }
+  .pullquote + .pullquote { margin-top: calc(-1 * var(--space-lg)); }
+
+  .pullquote::before {
+    content: "“";
+    display: block;
+    font-family: Georgia, var(--font-serif);
+    font-size: 5rem;
+    line-height: 0.6;
+    color: var(--accent-ink, var(--accent));
+    margin-bottom: 8px;
+  }
+
+  .pullquote p {
+    font-family: var(--font-serif);
+    font-size: var(--fs-quote);
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    color: var(--fg);
+    margin-bottom: 0;
+  }
+
+  .pullquote .accent-mark,
+  .pullquote strong { color: var(--accent-ink, var(--accent)); }
+
+  .pq-cite {
+    margin-top: var(--space-md);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--fg-tertiary);
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .pq-cite::before { content: "—— "; }
+
+  /* ========================================
+     HIGHLIGHT CARD — key insight
+     ======================================== */
+  .highlight-card {
+    margin: var(--space-md) 0;
+    padding: var(--space-lg);
+    background: var(--bg-highlight);
+    color: var(--fg-highlight);
+    border-radius: 0;
+    box-shadow: inset 4px 0 0 var(--accent-ink-inverse);
+    position: relative;
+  }
+
+  .highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    opacity: 0.04;
+    pointer-events: none;
+    /* crosshatch texture via SVG */
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8L8 0M-1 1L1 -1M7 9L9 7' stroke='%23fff' stroke-width='.5'/%3E%3C/svg%3E");
+  }
+
+  .highlight-card p {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--fg-highlight);
+    margin-bottom: 0;
+  }
+  .highlight-card strong,
+  .highlight-card b,
+  .highlight-card a {
+    color: var(--fg-highlight);
+  }
+
+  .highlight-card .attr {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.06em;
+    color: var(--fg-highlight); opacity: 0.55;
+    margin-top: var(--space-md);
+    text-transform: uppercase;
+  }
+
+  /* ========================================
+     DEFINITION CARD — glossary style
+     ======================================== */
+  /* Glossary entries read as one set: hairline between entries, a firmer rule above and below the run */
+  .def-card {
+    margin: 0;
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--border);
+  }
+  .def-card:not(.def-card + .def-card) { margin-top: var(--space-lg); border-top: 1px solid var(--fg); }
+  .def-card:not(:has(+ .def-card)) { margin-bottom: var(--space-lg); border-bottom: 1px solid var(--fg); }
+
+  .def-card-label {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-tertiary);
+    margin-bottom: var(--space-xs);
+  }
+
+  .def-card-term {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+  }
+
+  .def-card-body {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--fg-secondary);
+  }
+
+  /* ========================================
+     ASIDE CARD — contextual note
+     ======================================== */
+  .aside-card {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--fg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .aside-icon {
+    flex-shrink: 0;
+    color: var(--accent-ink, var(--accent));
+    padding-top: 2px;
+  }
+  .aside-icon svg { display: block; }
+
+  .aside-title {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-ink, var(--accent));
+    margin-bottom: var(--space-xs);
+  }
+
+  .aside-content p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--fg-secondary);
+    margin-bottom: 0;
+  }
+
+  /* ========================================
+     SUMMARY CARD — key takeaway grid
+     ======================================== */
+  .summary-card {
+    margin: var(--space-xl) 0;
+  }
+
+  .summary-label {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-ink, var(--accent));
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: var(--space-md);
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-sm);
+  }
+
+  .summary-item {
+    border-top: 1px solid var(--fg);
+    padding: var(--space-md) 0 var(--space-sm);
+  }
+
+  .summary-item-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .summary-item-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--fg-secondary);
+  }
+
+  /* ========================================
+     PROCESS — numbered steps
+     ======================================== */
+  .process {
+    margin: var(--space-xl) 0;
+  }
+
+  .process-step {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .process-step:last-child {
+    border-bottom: none;
+  }
+
+  .process-num {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    color: var(--accent-ink, var(--accent));
+    flex: 0 0 32px;
+    padding-top: 2px;
+  }
+
+  .process-content {
+    flex: 1;
+  }
+
+  .process-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .process-desc {
+    font-size: 0.88rem;
+    color: var(--fg-secondary);
+    line-height: 1.7;
+  }
+
+  /* ========================================
+     EMBED CARD — inline SVG / UI preview
+     ======================================== */
+  .embed-card {
+    margin: var(--space-xl) 0;
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--fg);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .embed-label {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-ink, var(--accent));
+    padding: 0;
+    display: inline-block;
+  }
+
+  .embed-body {
+    padding: var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+  }
+
+  .embed-body svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .embed-caption {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.04em;
+    color: var(--fg-tertiary);
+    padding: 0 var(--space-md) var(--space-md);
+  }
+
+  /* ========================================
+     GALLERY — horizontal scroll of placeholders
+     ======================================== */
+  .gallery {
+    margin: var(--space-xl) 0;
+    padding: 0;
+    display: flex;
+    gap: var(--space-md);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .gallery::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .gallery::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .gallery::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 0;
+  }
+
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 280px;
+    scroll-snap-align: start;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    border: 1px solid var(--border-light);
+  }
+
+  .gallery-cap {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.04em;
+    color: var(--fg-tertiary);
+    margin-top: var(--space-sm);
+    line-height: 1.5;
+  }
+
+  .gallery-hint {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    color: var(--fg-tertiary);
+    letter-spacing: 0.04em;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    text-align: right;
+  }
+
+  .img-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8L8 0M-1 1L1 -1M7 9L9 7' stroke='%23d4d0c8' stroke-width='.5'/%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+
+  .img-placeholder span {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.06em;
+    color: var(--fg-tertiary);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    background: var(--bg-card);
+    padding: 2px 8px;
+  }
+
+  .gallery-item .img-placeholder {
+    aspect-ratio: 3/2;
+    height: 180px;
+  }
+
+  /* ========================================
+     FIGURES — single image, 2–3 image row, 4+ image strip, video/iframe
+     (markdown images carry an inline border-radius from render.mjs)
+     ======================================== */
+  .figure-card {
+    margin: var(--space-xl) 0;
+  }
+
+  .figure-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    border: 1px solid var(--border-light);
+    object-fit: cover;
+  }
+
+  .figure-card figcaption {
+    margin-top: 12px;
+    font-family: var(--font-serif);
+    font-size: var(--fs-caption);
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: var(--fg-secondary, var(--fg));
+    text-align: left;
+  }
+  /* 图注首句加粗当标题 */
+  figcaption .cap-lead { font-weight: 600; font-style: normal; color: var(--fg); margin-right: .35em; }
+
+  .img-row { display: grid; gap: 12px; margin-top: 2.2em; margin-bottom: 2.2em; }
+  .img-row-2 { grid-template-columns: 1fr 1fr; }
+  .img-row-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .img-row .figure-card { margin: 0; min-width: 0; }
+  .img-row .figure-card img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+  .img-strip-wrap { margin-top: 2.2em; margin-bottom: 2.2em; }
+  .img-strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .img-strip .figure-card { flex: 0 0 62%; margin: 0; scroll-snap-align: start; }
+  .img-strip-hint { font-family: var(--font-mono); font-size: var(--fs-meta); color: var(--fg-tertiary); text-align: right; margin-top: 6px; }
+
+  .media-embed video, .media-embed iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; border: 0; background: #000; }
+
+  /* ========================================
+     TABLE — book-style three-line table
+     ======================================== */
+  .table-wrap {
+    margin: 2em 0;
+    overflow-x: auto;
+  }
+
+  .table-wrap table {
+    width: 100%;
+    min-width: 0;
+    border-collapse: collapse;
+    font-size: var(--fs-small);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table-wrap th {
+    padding: 10px 12px;
+    border-top: 1.5px solid var(--fg);
+    border-bottom: 1.5px solid var(--fg);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0;
+    color: var(--fg);
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  .table-wrap td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--tbl-line);
+    font-family: var(--font-serif);
+    line-height: 1.45;
+    color: var(--fg);
+    vertical-align: top;
+  }
+  .table-wrap td:first-child { white-space: nowrap; }
+  .table-wrap tbody tr:last-child td { border-bottom: 1.5px solid var(--fg); }
+  /* Leftover zebra reset. Its !important also beats ui.css's [contenteditable]
+     hover/focus tint, so even rows never tint; kept for parity. */
+  .table-wrap tbody tr:nth-child(even) td { background: none !important; }
+
+  .table-wrap .al-num, .table-wrap .al-right { text-align: right; }
+  .table-wrap td.al-num, .table-wrap td.al-right { white-space: nowrap; }
+  .table-wrap .al-center { text-align: center; }
+  .table-wrap td strong { color: var(--accent-ink, var(--accent)); font-weight: 700; }
+  .table-wrap td small, .table-wrap td .sub { color: var(--fg-tertiary); font-size: 0.78em; }
+
+  .table-caption {
+    caption-side: top;
+    margin-top: var(--space-sm);
+    margin-bottom: 10px;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--fg-secondary);
+    text-align: center;
+  }
+
+  /* ========================================
+     BAR CHART (```chart) — pure HTML/CSS, follows the palette
+     ======================================== */
+  .hchart {
+    margin: 2.2em 0;
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .hc-title { margin-bottom: 22px; font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--fg); text-align: center; }
+  .hc-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; margin-bottom: 22px; font-size: 0.78rem; color: var(--fg-secondary); }
+  .hc-key i { display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: -1px; background: var(--hc-mute); }
+  .hc-row { display: grid; grid-template-columns: minmax(120px, 30%) 1fr; gap: 18px; align-items: center; padding: 7px 0; }
+  .hc-group { padding: 16px 0; border-top: 1px solid var(--tbl-line); }
+  .hc-label { font-size: 0.82rem; color: var(--fg); line-height: 1.35; }
+  .hc-bars { display: grid; gap: 6px; }
+  .hc-bar { position: relative; display: flex; align-items: center; gap: 8px; height: 20px; padding-right: 5em; }  /* room for the value after a 100% bar */
+  .hc-group .hc-bar { height: 14px; }
+  .hc-fill { display: block; height: 100%; background: var(--hc-mute); flex: none; }
+  .hc-val { font-size: var(--fs-meta); font-variant-numeric: tabular-nums; color: var(--fg-secondary); white-space: nowrap; }
+  .hc-group .hc-val { font-size: var(--fs-meta); }
+  .hc-hi .hc-fill, .hc-key.hc-hi i { background: var(--accent); }
+  .hc-hi .hc-val, .hc-row.hc-hi .hc-label { color: var(--fg); font-weight: 600; }
+  /* both series highlighted: the second one is lighter so the pair stays distinguishable */
+  .hc-s0.hc-hi ~ .hc-s1.hc-hi .hc-fill, .hc-key.hc-s0.hc-hi ~ .hc-key.hc-s1.hc-hi i { opacity: 0.6; }
+  .hc-na .hc-val { color: var(--fg-tertiary); font-style: italic; }
+  .hc-cap {
+    margin-top: 20px;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--fg-secondary);
+    text-align: center;
+  }
+
+  /* ========================================
+     CODE
+     ======================================== */
+  pre {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--fg);
+    color: var(--bg);
+    border-radius: 0;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: var(--border-light);
+    padding: 2px 5px;
+    border-radius: 0;
+  }
+  .section code { overflow-wrap: anywhere; word-break: break-all; }
+
+  /* ========================================
+     TOC SIDEBAR (open/push behaviour lives in ui.css)
+     ======================================== */
+  .toc {
+    position: fixed;
+    left: 0; top: 0;
+    width: 0; height: 0;
+    overflow: visible;
+    z-index: 100;
+    pointer-events: none;
+  }
+
+  .toc-toggle {
+    position: fixed;
+    left: var(--space-lg); top: var(--space-lg);
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 0;
+    cursor: pointer;
+    color: var(--fg-tertiary);
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    z-index: 102;
+    pointer-events: auto;
+  }
+
+  .toc-toggle:hover,
+  .toc-open .toc-toggle {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+  }
+
+  .toc-panel {
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    width: 320px !important; /* beats ui.css drawer width min(300px, 86vw) */
+    background: var(--bg-card);
+    border-right: 1px solid var(--border-light);
+    padding: var(--space-3xl) var(--space-lg) var(--space-2xl);
+    overflow-y: auto;
+    transform: translateX(-100%);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+    z-index: 101;
+    pointer-events: auto;
+  }
+
+  .toc-open .toc-panel {
+    transform: translateX(0);
+  }
+
+  .toc-header {
+    font-family: var(--font-mono);
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg-tertiary);
+    margin-bottom: 18px;
+  }
+
+  /* Narrow tabular number column; groups by whitespace, no rules */
+  .toc-item {
+    display: grid;
+    grid-template-columns: 2.4em 1fr;
+    gap: 0 10px;
+    align-items: baseline;
+    padding: 9px 0;
+    font-family: var(--font-sans);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--fg-secondary);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .toc-item:hover {
+    color: var(--accent-ink, var(--accent));
+  }
+
+  .toc-item.toc-active {
+    color: var(--accent-ink, var(--accent));
+    font-weight: 600;
+  }
+
+  .toc-num {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    color: var(--fg-tertiary);
+    flex-shrink: 0;
+    width: 22px;
+    text-align: right;
+    opacity: .7;
+  }
+
+  .toc-active .toc-num {
+    color: var(--accent-ink, var(--accent));
+  }
+
+  /* ========================================
+     FOOTER
+     ======================================== */
+  .divider-dot {
+    display: block;                 /* not a grid: the dots are one centred line */
+    margin: var(--space-2xl) auto;
+    width: 100%;
+    text-align: center;
+    color: var(--border);
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+
+  .container > footer {
+    padding: var(--space-2xl) 0 var(--space-3xl);
+    text-align: center;
+  }
+
+  .container > footer > * {
+    grid-column: 1 / -1;
+  }
+
+  .container > footer p {
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    letter-spacing: 0.06em;
+    color: var(--fg-tertiary);
+    text-transform: uppercase;
+  }
+
+  /* ========================================
+     RESPONSIVE
+     ======================================== */
+  @media (max-width: 1024px) {
+    .container { padding: 0 var(--space-xl); }
+    .section-number { padding-top: 0; }
+  }
+
+  @media (max-width: 760px) {
+    .img-row-3 { grid-template-columns: 1fr 1fr; }
+    .img-strip .figure-card { flex-basis: 85%; }
+  }
+
+  @media (max-width: 640px) {
+    html, body { overflow-x: hidden; }
+    .container { padding: 0 var(--space-lg); }
+    /* masthead clears the TOC button and wraps cleanly */
+    .doc-chrome.doc-line { padding: 68px 4px 12px !important; font-size: 12px; line-height: 1.9; } /* !important: see desktop rule */
+    .doc-line .dl-sep { margin: 0 .5em; }
+    .hero h1 { font-size: 1.8rem; overflow-wrap: anywhere; }
+    .pullquote p { font-size: 1.15rem; }
+    .section > * { min-width: 0; }
+    .gallery-item { width: 220px; }
+    .summary-grid { grid-template-columns: 1fr; }
+    .hc-row { grid-template-columns: 1fr; }
+  }
+
+  /* ========================================
+     PRINT / PDF
+     Break rules live in ui.css (shared). Never put break-inside:avoid on
+     .section/.hero: a whole chapter that doesn't fit gets pushed to the
+     next page and leaves a half-empty page behind.
+     ======================================== */
+  @media print {
+    .gallery { flex-wrap: wrap; overflow: visible; }
+    .gallery-item { width: 45%; }
+    .img-strip { flex-wrap: wrap; overflow: visible; }
+    .img-strip-hint { display: none; }
+  }
+
+  /* ========================================
+     FOOTNOTES — [^n] references and the list at the end
+     ======================================== */
+  sup.fn-ref { font-size: .72em; line-height: 0; margin-left: 1px; }
+  sup.fn-ref a, .fn-back { color: var(--accent-ink); text-decoration: none; }
+  .footnotes li { scroll-margin-top: 80px; }
+
+  /* Phones: diagrams keep a readable size and scroll sideways; table headers don't break inside a word */
+  .table-wrap th { word-break: keep-all; }
+  @media (max-width: 640px) {
+    .embed-body { overflow-x: auto; }
+    .embed-body > svg { min-width: 520px; }
+  }
+
+  /* Phones: side-by-side image rows stack one per line, shown whole (no 4:3 crop) */
+  @media (max-width: 640px) {
+    .img-row-2, .img-row-3 { grid-template-columns: minmax(0, 1fr); gap: var(--space-lg, 20px); }
+    .img-row .figure-card img { aspect-ratio: auto; height: auto; object-fit: contain; }
+    .figure-card img, .section img, .table-wrap { max-width: 100%; }
+    .table-wrap { overflow-x: auto; }
+  }
+</style>
+<style>  /* ══════════════════════════════════════
+     UI OVERLAY — Settings, Share, Edit
+     Shared across all themes
+     ══════════════════════════════════════ */
+
+  /* ── Editable text ── */
+  [contenteditable] {
+    outline: none;
+    cursor: text;
+    transition: background 0.15s;
+    border-radius: 2px;
+  }
+  [contenteditable]:hover {
+    background: rgba(0,0,0,0.03);
+  }
+  [contenteditable]:focus {
+    background: rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 2px var(--accent, #002FA7);
+  }
+
+  /* ── FAB container (bottom-right) ── */
+  .hf-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  .hf-fab-btn {
+    width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--fg, #0a0a0a);
+    color: var(--bg, #fafaf8);
+    border: none; border-radius: 0; cursor: pointer;
+    transition: opacity 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .hf-fab-btn:hover { opacity: 0.85; }
+  .hf-fab-btn svg { width: 20px; height: 20px; }
+
+  /* ── Dropdown menu (share + settings) ── */
+  .hf-dropdown {
+    position: absolute;
+    background: var(--fg, #0a0a0a);
+    color: var(--bg, #fafaf8);
+    min-width: 220px;
+    padding: 8px 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(4px);
+    transition: opacity 0.15s, transform 0.15s;
+    z-index: 210;
+  }
+  .hf-dropdown.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .hf-fab .hf-dropdown { right: 0; bottom: calc(100% + 6px); }
+
+  .hf-dropdown-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 16px;
+    font-family: var(--font-sans, sans-serif);
+    font-size: 13px; font-weight: 400;
+    cursor: pointer;
+    transition: background 0.1s;
+    border: none; background: none; color: inherit;
+    width: 100%; text-align: left;
+  }
+  .hf-dropdown-item:hover { background: rgba(255,255,255,0.08); }
+  .hf-dropdown-item svg { width: 16px; height: 16px; opacity: 0.5; }
+
+  .hf-dropdown-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 6px 0;
+  }
+
+  .hf-dropdown-label {
+    padding: 8px 16px 4px;
+    font-family: var(--font-mono, monospace);
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    opacity: 0.35;
+  }
+
+  /* ── Color swatches ── */
+  .hf-swatches {
+    display: flex; gap: 6px;
+    padding: 6px 16px 10px;
+  }
+  .hf-swatch {
+    -webkit-appearance: none; appearance: none; padding: 0;
+    width: 28px; height: 28px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    position: relative;
+  }
+  .hf-swatch:hover { border-color: rgba(255,255,255,0.3); }
+  .hf-swatch.active { border-color: var(--bg, #fff); }
+  .hf-swatch.active::after {
+    content: '✓';
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+
+  /* ── Font options ── */
+  .hf-font-options {
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 4px 16px 8px;
+  }
+  .hf-font-option {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none; background: none; color: inherit;
+    width: 100%; text-align: left;
+    transition: background 0.1s;
+  }
+  .hf-font-option:hover { background: rgba(255,255,255,0.08); }
+  .hf-font-option.active { background: rgba(255,255,255,0.12); }
+  .hf-font-option .font-preview {
+    font-size: 15px; font-weight: 300;
+    opacity: 0.7;
+  }
+  .hf-font-option .font-name {
+    font-family: var(--font-mono, monospace);
+    font-size: 10px; letter-spacing: 0.08em;
+    text-transform: uppercase; opacity: 0.4;
+  }
+
+  /* ── Print hide UI ── */
+  @media print {
+    .hf-fab,.toc,.toc-scrim { display: none !important; }
+    [contenteditable] { box-shadow: none !important; background: none !important; }
+  }
+
+  /* ── TOC layout behaviour (shared) ──
+     Root cause of the old "TOC covers half the article" bug: the panel is a
+     280px fixed overlay, while the article container starts ~120px from the
+     left edge on a 1440px screen, so opening it always covered the text.
+     Fix: on wide screens opening the TOC pushes the page (body padding-left),
+     so nothing is covered; on narrow screens it is a drawer with a scrim and
+     closes on outside click / Esc. */
+  .toc { width: 0; height: 0; overflow: visible; pointer-events: none; }
+  .toc-toggle, .toc-panel { pointer-events: auto; }
+  .toc-panel { visibility: hidden; transition: transform 0.25s cubic-bezier(.2,0,.38,.9), visibility 0s linear 0.25s; }
+  .toc-open .toc-panel { visibility: visible; transition: transform 0.25s cubic-bezier(.2,0,.38,.9); }
+  body { transition: padding-left 0.25s cubic-bezier(.2,0,.38,.9); }
+  .toc-scrim { display: none; }
+  @media (min-width: 1025px) {
+    html.toc-is-open body { padding-left: 300px; }
+  }
+  @media (max-width: 1024px) {
+    .toc-scrim {
+      position: fixed; inset: 0; z-index: 99;
+      background: rgba(0,0,0,0.28);
+    }
+    html.toc-is-open .toc-scrim { display: block; }
+    .toc-panel { width: min(300px, 86vw); }
+  }
+
+  /* ══════════════════════════════════════
+     PRINT / PDF — pagination (shared by both styles)
+     Root cause of the "half-empty page" bug: style-magazine.css had
+     `.hero, .section { break-inside: avoid }`, and both themes lay sections
+     out as CSS grids; any chapter taller than the remaining space jumped to
+     the next page whole. Rules now: only small atomic blocks avoid breaking,
+     long containers flow across pages, headings stick to what follows.
+     ══════════════════════════════════════ */
+  /* Page margins live inside the page (container padding repeated on every page via
+     box-decoration-break), so the theme's paper colour fills the whole sheet — Chrome
+     doesn't paint @page margins, which left a white frame around dark themes. */
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body, body * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    html { background: var(--bg); }
+    html.toc-is-open body, body { padding-left: 0 !important; }
+    .container { max-width: none !important; padding: 14mm 12mm 16mm !important; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+    .embed-label, .summary-label, .aside-title { break-after: avoid; }
+    /* grid fragmentation is fragile — flow sections as blocks on paper */
+    .section, .hero, footer, .container > .pullquote { display: block !important; }
+    .section-header { display: block !important; }
+    .section, .hero, .process, .gallery, .gallery-grid, .summary-card,
+    .summary-grid, .table-wrap, table, ul, ol, pre, .chart-row,
+    .embed-card, .data-figure { break-inside: auto !important; }
+
+    /* headings never end a page */
+    h1, h2, h3, h4, h5, .section-number, .section-header, .hero-kicker,
+    .def-card-label, .hl-label, .toc-header { break-after: avoid; break-inside: avoid; }
+    p { orphans: 3; widows: 3; }
+
+    /* small atomic blocks: keep whole */
+    blockquote, .def-card, .def-card-swiss, .highlight-card, .highlight-swiss,
+    .pullquote, .pullquote-swiss, .aside-card, .process-step, .big-number,
+    .summary-item, .gallery-item, li, tr, .callout { break-inside: avoid; }
+
+    /* image + caption travel together; cap height (120mm ≈ 45% of an A4 text area). Residual gap: a heading kept with a big figure can still leave up to ~half a page — intended (no orphan heading). so a figure never strands more than ~half a page */
+    figure, .figure-card { break-inside: avoid; }
+    figure img, .figure-card img, img { max-height: 120mm; width: auto; max-width: 100%; object-fit: contain; }
+    figcaption, .figure-caption, .caption { break-before: avoid; }
+    pre { white-space: pre-wrap; word-break: break-all; }
+    .section { padding-top: 12mm !important; padding-bottom: 4mm !important; }
+    a { text-decoration: none; }
+  }
+
+  /* ══════════════════════════════════════
+     PRINT v0.14 — blank-space budget (≤25% per page)
+     A block that can't split leaves at most its own height as a gap, so every
+     unsplittable block is capped well under a quarter page; everything tall
+     (tables, charts, quotes) is allowed to split. Screen layout untouched.
+     ══════════════════════════════════════ */
+  @media print {
+    .section { padding-top: 5mm !important; padding-bottom: 2mm !important; margin-top: 0 !important; border: 0 !important; }
+    .section::before { content: none !important; }
+    .section > .section-number { margin-bottom: 2mm !important; }
+    .section h2, .section-header { margin-bottom: 4mm !important; }
+    .hero { padding-top: 0 !important; padding-bottom: 4mm !important; }
+    .hero::after { margin-top: 3mm !important; }
+    .doc-chrome { padding-top: 0 !important; padding-bottom: 4mm !important; }
+    .hero-cover, .hero-cover .hero-bg { min-height: 0 !important; height: 60mm !important; }
+
+    /* media: shrink to fit instead of jumping */
+    figure img, .figure-card img, .img-row img, .img-strip img, img { max-height: 58mm !important; width: auto !important; max-width: 100% !important; object-fit: contain !important; margin-left: auto; margin-right: auto; }
+    .img-row img { max-height: 42mm !important; }
+    .media-embed video, .media-embed iframe { max-height: 58mm !important; }
+    figure, .figure-card { margin-top: 3mm !important; margin-bottom: 3mm !important; }
+    .figure-card > figcaption { margin-top: 1.5mm !important; text-align: center; }  /* images shrink and centre on paper */
+
+    /* headings stay with the next *line*, not with a whole big block */
+    h2, h3, .section-header, .section-number { break-after: avoid; }
+    .section-header + .figure-card, h2 + .figure-card, .section-number + h2 + .figure-card,
+    h2 + .table-wrap, h2 + .hchart, .section-header + .hchart, .section-header + .table-wrap { break-before: auto !important; }
+
+    /* tables: split across pages, header row repeats */
+    .table-wrap, .table-wrap table { break-inside: auto !important; overflow: visible !important; }
+    .table-wrap thead { display: table-header-group; }
+    .table-wrap tr { break-inside: avoid; }
+    .table-caption { break-after: avoid; }
+
+    /* charts: allowed to split between rows/groups */
+    .hchart { break-inside: auto !important; padding-top: 4mm !important; padding-bottom: 4mm !important; margin-top: 4mm !important; margin-bottom: 4mm !important; }
+    .hc-row, .hc-group, .hc-legend { break-inside: avoid; }
+    .hc-title, .hc-legend { break-after: avoid; }
+
+    /* quotes / cards may split when long; small ones still stay whole via orphans/widows */
+    blockquote, .pullquote, .pullquote-swiss, .highlight-card, .highlight-swiss { break-inside: auto !important; }
+    .pullquote, .pullquote-swiss { padding-top: 5mm !important; padding-bottom: 5mm !important; margin-top: 4mm !important; margin-bottom: 4mm !important; }
+    .img-row, .img-strip-wrap { margin-top: 3mm !important; margin-bottom: 3mm !important; }
+    p { orphans: 2; widows: 2; }
+  }
+  @media print {
+    figure img, .figure-card img, img { max-height: 54mm !important; }
+    .img-strip { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+    .img-strip .figure-card { flex: none !important; }
+    .img-strip img, .img-row img { max-height: 34mm !important; }
+  }
+  @media print {
+    /* heading followed directly by an unsplittable media block: don't drag the heading along */
+    .section-header:has(+ .figure-card), .section-header:has(+ .img-row), .section-header:has(+ .media-embed),
+    h2:has(+ .figure-card), h2:has(+ .img-row), h2:has(+ .media-embed),
+    .section-number:has(+ h2 + .figure-card) { break-after: auto !important; }
+  }
+  @media print { figure img, .figure-card img, img { max-height: 50mm !important; } .section-header .section-number { font-size: 20px !important; } }
+  @media print { .section-header + .figure-card img, h2 + .figure-card img { max-height: 38mm !important; } }
+  @media print { .section-header .section-number { display: inline-block !important; margin: 0 4mm 0 0 !important; } .section-header h2 { display: inline !important; } .section-header { margin-bottom: 3mm !important; } .figure-card { margin-top: 2mm !important; } }
+  @media print { h3 + .figure-card img { max-height: 38mm !important; } .hc-group { padding: 2mm 0 !important; } .hc-group .hc-bar { height: 10px !important; } .hc-bars { gap: 3px !important; } .hc-legend { margin-bottom: 3mm !important; } .hc-title { margin-bottom: 3mm !important; } .hc-row { padding: 1mm 0 !important; } .hc-bar { height: 13px !important; } }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" data-gz-fonts="playfair-display noto-serif-sc source-serif-4 noto-sans-sc ibm-plex-mono inter" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Serif+SC:wght@200..900&family=Source+Serif+4:ital,wght@0,200..900;1,200..900&family=Noto+Sans+SC:wght@100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@100..900&display=swap">
+</head>
+<body>
+
+<div class="toc-scrim" id="toc-scrim"></div>
+<nav class="toc" id="toc">
+  <button class="toc-toggle" id="toc-toggle" aria-label="Toggle table of contents">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4h14M2 9h10M2 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <div class="toc-panel" id="toc-panel">
+    <div class="toc-header">目录</div>
+    <a class="toc-item" href="#s-01"><span class="toc-num">01</span>开篇摘要</a>
+<a class="toc-item" href="#s-02"><span class="toc-num">02</span>删改说明（Redaction summary）</a>
+<a class="toc-item" href="#s-03"><span class="toc-num">03</span>执行摘要（Executive summary）</a>
+<a class="toc-item" href="#s-04"><span class="toc-num">04</span>我们对风险的主观结论</a>
+<a class="toc-item" href="#s-05"><span class="toc-num">05</span>关键发现（Key findings）</a>
+<a class="toc-item" href="#s-06"><span class="toc-num">06</span>过程细节（Process details）</a>
+<a class="toc-item" href="#s-07"><span class="toc-num">07</span>局限性（Limitations）</a>
+<a class="toc-item" href="#s-08"><span class="toc-num">08</span>附录要点</a>
+<a class="toc-item" href="#s-09"><span class="toc-num">09</span>X 上的相关讨论</a>
+<a class="toc-item" href="#s-10"><span class="toc-num">10</span>来源与版权</a>
+  </div>
+</nav>
+<div class="container">
+
+<div class="doc-chrome doc-line"><span class="dl-tag">METR</span><span class="dl-sep">·</span><span class="dl-tag">Anthropic</span><span class="dl-sep">·</span><span class="dl-tag">AI R&amp;D</span><span class="dl-sep">·</span><span class="dl-tag">AECI</span><span class="dl-sep">·</span><span class="dl-tag">安全评估</span><span class="dl-sep">·</span><span>编译自 METR 原文</span><span class="dl-sep">·</span><span>2026.11.06</span><span class="dl-sep">·</span><span>约 25 分钟</span></div>
+
+<header class="hero">
+  <h1>METR：Anthropic AI 研发加速评估（2026 年 10 月）中文详细导读</h1>
+  <p class="hero-subtitle">按原文章节的详细导读：约 2× 加速、多数或来自 AI 做研发、大半证据被删红；附 X 讨论</p>
+</header>
+<section class="section" id="s-0"><blockquote><p>原文：<a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">Independent Assessment of AI R&D Acceleration at Anthropic in October 2026</a> · METR · 2026-11-05 本页按报告原有章节做<strong>逐节详细导读</strong>（编译），保留全部关键数字、方法与限制条件；不是全文逐字翻译。文中短引号内为原文关键句。图表版权归 METR / 原作者，文末附 X 讨论。</p></blockquote></section><section class="section" id="s-01"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">01</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>开篇摘要</h2><p>METR（Model Evaluation & Threat Research）从 2026-08-12 到 2026-10-29，在 Anthropic 内部做了一场<strong>高权限访问</strong>评估，核心问题是：AI 本身有没有在加速 AI 研发。团队投入约 2.5 个全职人力，不收 Anthropic 的钱，最终向 Anthropic 提交约 100 页完整报告；公开版里，Anthropic 删掉了 METR 认为最有信息量的大部分证据。</p>
+<div class="summary-card"><div class="summary-label">三条主观结论</div><div class="summary-grid"><div class="summary-item"><div class="summary-item-title">速度 ≈2×</div><div class="summary-item-desc">定义清楚任务上约两倍于 2024-03→2025-10；区间约 1.3×–3×</div></div><div class="summary-item"><div class="summary-item-title">归因 ≈80% AI</div><div class="summary-item-desc">当前加速多数或来自用 AI 做研发；2025 末非 AI 因素也大</div></div><div class="summary-item"><div class="summary-item-title">未见近端瓶颈</div><div class="summary-item-desc">未来 12 个月未见清晰卡住点；可能进一步复利加速</div></div></div></div>
+<p>公开版能直接说的主观结论有三条：</p>
+<ol><li><strong>速度</strong>：截至 2026-10，Anthropic 在「定义清楚的任务」上提升模型能力的速度，大约是 2024-03 到 2025-10 那段历史节奏的 <strong>约 2 倍</strong>；不确定区间大约 <strong>1.3×–3×</strong>。</li><li><strong>归因</strong>：当前这轮加速里，<strong>多数（METR 主观猜测约 80%）</strong>可能来自大量用 AI 做研发；2025 年底那一波加速，非 AI 因素可能起了很大作用。加速<strong>不是</strong>训练算力增速变快造成的。</li><li><strong>瓶颈</strong>：公开可见证据里，没看到未来 12 个月内会明显卡住的算法、训练算力、实验算力或数据瓶颈；因此存在「进一步能力进步 → 更快加速」的显著风险。METR 反复强调自己视角有限，可能漏了瓶颈。</li></ol>
+<p>公开侧最硬的数字是：自 2025-10 起，Anthropic 内部 AECI（Anthropic 版 Epoch Capabilities Index）增速约 <strong>1.9×</strong>（95% CI：<strong>1.5–2.8×</strong>），相当于过去一年的基准进步≈此前两年（约从 Claude 2.1 到 Sonnet 4.5）。稳健性检验把加速估到 <strong>1.1×–2.9×</strong>。</p>
+<div class="highlight-card"><p>阅读提示**：Anthropic 大量删红后，公众无法自己核对最关键证据，只能比理想状态更多地依赖 METR 的判断。本页后半部分整理了 METR、Anthropic 联合创始人 Sam McCandlish，以及研究者、中文圈对该报告的讨论。</p><div class="attr">阅读提示</div></div>
+<hr class="divider"></section><section class="section" id="s-02"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">02</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>删改说明（Redaction summary）</h2><p>报告开篇就写清合同结构：Anthropic 有权删掉任何非公开信息；METR 有权披露「是否行使了删改权」「结论是否显著依赖被删内容」。</p>
+<p>Anthropic 确实行使了删改权，并删掉了 METR「最有信息量」证据的<strong>多数</strong>。Anthropic 的说法是：删改「aimed at removing confidential information that could accelerate other AI developers.」（旨在去掉可能加速其他 AI 开发者的机密信息。）</p>
+<div class="aside-card"><div class="aside-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><div class="aside-content"><div class="aside-title">删改的后果</div><p>公开报告达不到「证据透明」。公众无法自己核对最关键证据，只能比理想状态更多地依赖 METR 的判断。</p></div></div>
+<p>METR 同意被删内容属于这类机密，但<strong>不评价删得是否整体合理</strong><span class="dash">——</span>它认为自己不适合在公司商业利益与公众知情之间做权衡。后果是：公开报告<strong>达不到「证据透明」</strong>；许多被删证据有多种合理解释，METR 与 Anthropic 研究者对如何合成全局图景都有很大不确定性。</p>
+<hr class="divider"></section><section class="section" id="s-03"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">03</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>执行摘要（Executive summary）</h2><h3>评估窗口与访问</h3>
+<ul><li>时间：2026-08-12 至 2026-10-29。</li><li>Anthropic 提供了对内部 AI 研发流程的空前访问：预训练、强化学习（RL）、各域训练算力、内部模型基准、AI 提速分析、未来模型指标预测、相关员工访谈等。</li><li>动机：若 AI 开始显著加速进一步的 AI 开发，可能突然出现极端且有风险的能力。</li></ul>
+<h3>主观风险结论（三条）</h3>
+<p><strong>能力进步节奏。</strong> 截至 2026-10，在定义清楚的任务上，Anthropic 提升模型能力的速度大约是 2024-03→2025-10 历史节奏的两倍；真值落在 1.3× 或 3× 附近都不意外。对更宽、更不清晰任务的外推还有额外不确定性。</p>
+<p><strong>归因于 AI。</strong> 当前加速的多数很可能来自 Anthropic 广泛用 AI 做研发；不确定性很大，且其他原因在 2025 年末加速中很可能也扮演了重要角色。</p>
+<p><strong>进一步加速的风险。</strong> 未见明显瓶颈或强递减收益，因此进一步能力进步可能导致更快加速；也可能漏了重要瓶颈。</p>
+<h3>可公开描述的关键实证发现</h3>
+<ul><li>自 2025-10 起，内部模型 AECI 增速约 <strong>1.9×</strong>（95% CI 1.5–2.8×）→ 过去一年≈两年历史进步。</li><li>加速<strong>不是</strong>训练算力规模增速加快造成的。</li><li>访谈与调查与「AI 使用导致能力进步节奏翻倍」相容。员工自述提速很夸张，但难解释；研发加速主要靠 AI <strong>辅助</strong>，而非完全自主贡献；已有「signs of life」（生命迹象）暗示完全自主贡献可能很快变大。</li><li>未来 12 个月未见算法、训练算力、实验算力、数据方面的显著瓶颈证据；对瓶颈状态的理解多次翻转，当前判断信心不高。</li><li>最能支撑风险结论的若干关键发现被 Anthropic 删红。</li></ul>
+<h3>过程与局限（摘要）</h3>
+<ul><li>过程：范围、设置、时间线；共享了什么；删改后不能写什么。</li><li>可能<strong>低估</strong>加速的情形：(1) 近期增速还在继续抬升；(2) AI R&D 任务进一步自动化；(3) AECI 有时低估真实世界影响。</li><li>可能<strong>高估</strong>加速的情形：(1) 非 AI 因素；(2) AECI 偏可验证任务；(3) Anthropic 早期（2023–2025）增速异常偏低。</li></ul>
+<hr class="divider"></section><section class="section" id="s-04"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">04</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>我们对风险的主观结论</h2><p>METR 另有 2026-10 文章，提出公众理解失控风险需要搞清的高层问题。本节说明：这次内部证据如何改变了 METR 团队对那些问题的主观看法。</p>
+<h3>能力进步节奏</h3>
+<p>「显著加速整体进步率」本身会令人意外<span class="dash">——</span>因为递减收益和对算力缩放的依赖，通常还需要其他投入的惊人扩张。审完内部证据后，团队仍有显著不确定性与内部分歧，但<strong>多数参与本项目的 METR 员工</strong>现在相信：截至 2026-10，定义清楚任务上的能力提升速度约是历史的两倍；1.3× 或 3× 都不意外。</p>
+<p>1.9× 的 AECI 趋势（95% CI 1.5–2.8×）显著塑造了这一判断，但也可能是对基准分布过拟合，或 AECI 方法的伪影。另一方面，AECI 数据点滞后于研究加速，且偏稀疏，未必总能可靠估近期 R&D 加速。</p>
+<p>除 AECI 外，还有<strong>被删红</strong>的证据让团队更认真对待≈2×；也有迹象显示加速可能<strong>高于 2× 且随时间上升</strong>，但若显著更高会令他们意外。</p>
+<h3>归因于 AI</h3>
+<p>考察过的因素包括：算力缩放、招聘、数据改进、算法发现、其他瓶颈解除等。</p>
+<p>能<strong>有把握</strong>排除的一点：加速不是训练算力增速加快造成的。除此之外，Anthropic 内部也无共识，METR 也没有决定性证据。主观估计是：</p>
+<ol><li>2025 年末加速很可能受非 AI 因素影响（许多细节被删）。</li><li>猜测当前（2026-10）加速的多数（也许≈<strong>80%</strong>）来自 AI。判断不确定性很大，但基于多条关于 AI 贡献与其他原因的证据线。认为 AI 贡献相对重要性在上升；所考察的其他因素难以解释<strong>持续</strong>加速。下文关于 AI 使用提速的证据也与「大贡献」相容。</li></ol>
+<p>更细的「AI 对 AECI 与训练管线各阶段的累计/瞬时效应」估算被删红。</p>
+<h3>进一步加速的瓶颈</h3>
+<p>关键担忧是：用 AI 加速可能开始<strong>复利</strong><span class="dash">——</span>更强模型带来进一步加速。公开描述是：未识别出清晰瓶颈或陡峭递减收益，尽管评估过程中理解多次演变，不确定性很大。因此认为存在显著风险：未来一年进一步能力进步可能导致更快加速。</p>
+<hr class="divider"></section><section class="section" id="s-05"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">05</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>关键发现（Key findings）</h2><p>术语：用年倍数描述增长；用增长率之比描述「加速」。<strong>2× 加速</strong>＝用 1 年完成 2 年历史进步。若 AECI 历史趋势是 15 点/年，升到 30 点/年则加速率＝2。对指数增长变量，加速率＝增长率之比。</p>
+<figure class="figure-card"><img src="media/aeci-chart.jpg" alt="AECI 自 2025-10 起约 1.9× 加速。图：METR 官方线程。" loading="lazy" style="border-radius:0" /><figcaption><span class="cap-lead">AECI 自 2025-10 起约 1.9× 加速。</span>图：METR 官方线程。</figcaption></figure>
+<p>表：METR 推文配图 · AECI 趋势与加速估计 · 来源：<a href="https://x.com/METR_Evals/status/2118412205662314935">METR_Evals</a></p>
+<h3>自 2025-10 起，内部基准约两倍于历史增速</h3>
+<div class="highlight-card"><p>Anthropic 模型 AECI 自 2025-10 起加速约 1.9×（95% CI：1.5–2.8×）。</p><div class="attr">硬数字</div></div>
+<p>换言之，过去一年基准进步≈2023-10 到 2025-10（大致 Claude 2.1→Sonnet 4.5）。</p>
+<p>该估计高于 Haiku 5.5 系统卡报的 <strong>1.7×</strong>，主要因为纳入了更新的未发布模型。</p>
+<p>稳健性：换基准纳入、模型定年、模型纳入、饱和处理，加速估在 <strong>1.1×–2.9×</strong>。若「改进版 AECI」测到的真实演进是「无加速」或「>3×」，会令作者意外。细节见附录。</p>
+<h3>加速不是训练算力规模增速造成的</h3>
+<div class="aside-card"><div class="aside-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><div class="aside-content"><div class="aside-title">不是算力增速</div><p>训练算力规模增速与历史相似，甚至略慢。加速不是「砸更多训练算力」造成的。</p></div></div>
+<p>收到有说服力的证据，证明加速不是训练算力规模增速加快所致。进一步细节被删红。</p>
+<h3>访谈与调查与「AI 使用驱动翻倍」相容</h3>
+<p>相关证据线包括：访谈、自述提速、人数、代码行数、实验用量、领导层定性反思。公开可强调的有三块：</p>
+<p><strong>第一，访谈。</strong> METR 与 Anthropic 都深度访谈了许多研究员，问其工作领域因 AI 使用带来的整体加速。总体印象：估计范围很宽，但大致围绕 <strong>2×</strong>。部分引语（敏感细节已删）见附录。</p>
+<p><strong>第二，自述提速。</strong> 最新数据来自一系列 Slack 投票：员工用 reaction 投票估计「最新模型带来的提速」。METR 认为这只是很松的证据（低投入、样本偏）。但仍观察到自述持续上升，且水平很高（2026-10 达到约 <strong>12×</strong>）。</p>
+<p>注意：个人提速≠组织级加速率。要维持输出（如模型能力）的某增长率，通常需要劳动与/或劳动生产率的类似持续增长以克服递减收益。要显著加速整体进步，通常需要这些投入显著加速。因此更关心的是个人提速的<strong>增长率变化</strong>，而非绝对水平。关于「何种个人提速增长率才能解释关键领域估计加速」的更细分析被删红。</p>
+<p><strong>第三，自主贡献。</strong> 目前理解是：AI 尚不能对模型训练最重要环节做出高度显著且完全自主的贡献。但研究者描述了显著「signs of life」，暗示这类贡献可能很快出现，成熟度因领域而异。</p>
+<figure class="figure-card"><img src="media/uplift-survey.jpg" alt="员工自述 AI 提速持续上升（Slack 投票）。图：METR。" loading="lazy" style="border-radius:0" /><figcaption><span class="cap-lead">员工自述 AI 提速持续上升（Slack 投票）。</span>图：METR。</figcaption></figure>
+<p>表：自述提速随时间变化 · 来源：<a href="https://x.com/METR_Evals/status/2118412212134158442">METR_Evals</a></p>
+<h3>未见令人信服的持续快速进步瓶颈</h3>
+<p>未来 12 个月，算法进步、训练算力、实验算力、数据方面未见显著瓶颈证据。但对不同瓶颈状态的理解随更细信息多次改变，对当前评估信心不高。若干具体瓶颈分析被删红。</p>
+<h3>额外被删证据：难解释，但支持持续乃至上升的加速</h3>
+<p>内部指标与方法覆盖预训练与 RL 的基准、算法效率、整体模型强度，以及算力利用率、推理效率、数据效率等。调查包括：内部指标的方法变体（花费数周，是最大不确定性来源）、相关团队对关键内部证据与加速估计的信念、训练管线其他部分是否偏估、是否对内部指标过拟合。</p>
+<p>内部证据支持训练管线存在显著加速；部分证据暗示加速可能 >2× 且随时间上升，但解释不确定性很大。</p>
+<figure class="figure-card"><img src="media/pipeline-evidence.jpg" alt="METR 称 Anthropic 在预训练到 RL 的管线上分享了大量非公开证据。图：METR。" loading="lazy" style="border-radius:0" /><figcaption><span class="cap-lead">METR 称 Anthropic 在预训练到 RL 的管线上分享了大量非公开证据。</span>图：METR。</figcaption></figure>
+<p>表：管线证据示意（公开版大量涂黑）· 来源：<a href="https://x.com/METR_Evals/status/2118412189833085248">METR_Evals</a></p>
+<hr class="divider"></section><section class="section" id="s-06"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">06</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>过程细节（Process details）</h2><h3>目的与关系</h3>
+<p>METR 评估 Anthropic 内部「AI 加速 AI R&D」的程度，以及极端有风险能力可能多快出现。Anthropic 的 Responsible Scaling Policy（RSP）把 AI R&D 加速列为关键风险指标；本次评估<strong>不特别对照</strong> RSP 门槛，而是试图形成整体图景。</p>
+<p>本项目始于 8 月中旬，<strong>不同于</strong> Anthropic 于 2026-10-15 宣布的「类员工权限」独立评估方安排。</p>
+<h3>三大问题与权限</h3>
+<p>十一周独立评估围绕：</p>
+<ol><li>Anthropic 内部能力增长率是否加速？</li><li>加速中有多少可归因于 AI？</li><li>近期是否有重要瓶颈会放缓增长或限制加速？</li></ol>
+<p>另有范围：审阅 Anthropic 2026-08 Risk Report 中 AI R&D 部分（单独发表）。合同最初还包括核查「能力 vs 安全」算力分配百分比。</p>
+<p>METR 可请求任何其认为相关的信息；Anthropic 可单方面批准或拒绝。实务上常谈判折中到「有信息量、不太敏感、易共享」的数据。整体访问超出预期。本次<strong>未</strong>请求/获得对非公开模型的采样访问。也不是「员工式」无中介访问。</p>
+<p>Anthropic 对报告中所有非公开信息有单方面删改权。METR 可单方面披露：审查与删改流程的存在与一般条款；是否行使删改；结论是否显著依赖被删信息；访问水平。</p>
+<p>出于安全，评估全程在 Anthropic 设备上工作。Anthropic 提供免费 token，主要用于 AI 辅助数据分析与可视化。按惯例不收 Anthropic 付款。遵循 METR 与 AI 公司合作政策；附录有 COI 披露、合同摘录与 AEF-1 清单。</p>
+<h3>删改了什么</h3>
+<p>约 100 页 Full Report 试图详细回答 METR 近期提出的关键问题。公开报告能写的证据源如下（报告表）：</p>
+<figure class="table-wrap"><table><thead><tr><th>信息类型</th><th>是否分享给 METR</th><th>公开报告是否描述结果</th></tr></thead><tbody><tr><td>内部能力测量：内部模型基准能力</td><td>是</td><td>是</td></tr><tr><td>内部能力测量：关键中间指标</td><td>是</td><td>否</td></tr><tr><td>算法进步估计</td><td>是</td><td>否</td></tr><tr><td>AI 贡献证据</td><td>是</td><td>部分</td></tr><tr><td>关键 R&D 投入测量</td><td>大多</td><td>否</td></tr><tr><td>瓶颈与预测细节</td><td>部分</td><td>否</td></tr><tr><td>员工访谈</td><td>是</td><td>部分</td></tr></tbody></table></figure>
+<figure class="figure-card"><img src="media/redaction-table.png" alt="删改前后可公开证据对照表。图：METR。" loading="lazy" style="border-radius:0" /><figcaption><span class="cap-lead">删改前后可公开证据对照表。</span>图：METR。</figcaption></figure>
+<p>表：共享与删红证据源 · 来源：<a href="https://x.com/METR_Evals/status/2118412194702598339">METR_Evals</a></p>
+<p>因删改，公开版还无法传达：</p>
+<ol><li>训练管线关键领域更细的加速与 AI 归因估计；</li><li>算力/数据/算法贡献更细拆分（除「加速不是训练算力增速」这一关键 takeaway）；</li><li>对提案中局限问题的更细回答（需更多方法细节）；</li><li>未来模型指标预测。</li></ol>
+<p>另有若干次要删改，报告各节尽量描述。</p>
+<h3>关键日期</h3>
+<ol><li>08-12：开始分享机密信息</li><li>08-14：分享未删改的 8 月 AI R&D Risk Report</li><li>09-12：Full Report 初稿给 Anthropic</li><li>09-18：Risk Report Review 初稿</li><li>09-22–10-22：迭代</li><li>10-22：约 100 页 Full Report 交付</li><li>10-25：Anthropic 给出删改指引</li><li>10-26：公开报告草稿</li><li>10-27–29：Anthropic 收紧删改指引，METR 迭代</li><li>10-29：提交公开报告草稿；双方同意约 5 天延期以更仔细适配新指引</li><li>11-03：提交最终公开报告</li></ol>
+<h3>拿到的数据（摘要；详细清单被删）</h3>
+<p>包括但不限于：内部基准与 AECI、样本任务/评分标准/agent 花费；预训练与 RL 历史算法效率与整体强度、算力/推理/数据效率；人数与进度归因；多域训练算力；内部分析；各团队自述提速调查；全公司与部分研究团队代码行/PR；AI agent 推理花费随时间；自主研究贡献内部文档；约 15 次关键员工访谈（预定义宽范围，排除特别敏感主题）。少数请求因过于敏感未提供。Anthropic 还提供大量员工时间；METR 认为最密切合作的两人是 Anthropic 内部对 AI R&D 加速测量上下文最深的两名研究者。</p>
+<h3>算力分配核查被取消</h3>
+<p>合同原含核查 Anthropic 算力分配（尤其能力 vs 安全）。中途 Anthropic 改范围，去掉算力核查，只做 AI R&D 加速。取消时 METR 尚未对算力使用得出实质结论。Anthropic 称希望暂时聚焦风险评估，以后再回头做。</p>
+<hr class="divider"></section><section class="section" id="s-07"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">07</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>局限性（Limitations）</h2><h3>访问有限可能导致漏上下文或数据</h3>
+<p>尽管访问很深，员工级访问仍会显著加深评估。信息管道相对窄，少数数据请求被拒。若能按需读文档、观察内部讨论、做更频繁多元对话，图景会更丰富。可能因「不知道某信息存在」或「无法自己查找」而漏掉重要信息。</p>
+<p>评估过程中，对关键数据的解释随更多上下文多次大幅改变，甚至在关键问题上多次翻转。更充分访问本可大幅加速正确解释；仍可能有因上下文不足而误读的点。</p>
+<h3>可能低估加速</h3>
+<ul class="checklist"><li><strong>错过近期进一步加速。</strong> 增长可能在持续加速（例如双曲增长）。AECI 趋势上未见清晰证据，但有其他被删证据使之更可信。若双曲，则瞬时加速被低估，近未来加速被大幅低估。另：模型级结果只在训练完成后才观测到，观测有效 R&D 加速有约等于训练时长的滞后。</li><li><strong>自动化比估计的更近。</strong> 尚不能完全自动化训练管线实质性部分，但有 signs of life。一旦去掉人类瓶颈，可能非常迅速加速。</li><li><strong>AECI 可能低估真实世界影响。</strong> 基准与真实影响关系数据稀疏。例：数学上 ECI 增速未见大幅加速，却出现解决困扰人类数十年的 Millennium Prize 问题。真实影响可能下游于能力曲线突然跨越。</li></ul>
+<h3>可能高估加速</h3>
+<ul class="checklist"><li><strong>非 AI 因素解释大部分加速</strong> → 对未来高增长/进一步加速的预期应下调。</li><li><strong>加速可能限于定义清楚的任务。</strong> 证据多测易自动/用 LM 评分的「干净」任务。若相对历史，近期模型在干净任务上比在「messy」任务上增长更快，则可能高估真实影响加速（例如对 AECI 任务类型过拟合）。</li><li><strong>若历史增速异常偏低，则加速数字被夸大。</strong> 附录指出：Anthropic 模型在 2025 年末前，AECI 历史增速低于更广行业前沿，可能解释部分加速。</li></ul>
+<hr class="divider"></section><section class="section" id="s-08"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">08</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>附录要点</h2><h3>方法：内部模型、断点、三种增长率</h3>
+<p>纳入 Anthropic 仅内部模型（公开代号）：Unreleased 2022（2022 训完）；Model 2（2026-07）；Model 3（2026-08–09）；Model 4（2026-09–10）。未来模型预测被删。</p>
+<p>常用带单一断点的 OLS 分段线性拟合；加速＝两段线性趋势之比。默认采用标准 AECI 上最佳拟合断点（主设定约 <strong>2025-10-07</strong>），以在各图保持一致。</p>
+<p>围绕三种增长率组织：历史增长率（趋势变化前）；当前增长率（2026-10）；反事实增长率（若 Anthropic 不能用 AI）。前两者可观测，反事实只能猜。需区分 AI 带来的<strong>瞬时加速</strong>与<strong>累计加速</strong>（例如自 2025-10 以来总进步中 AI 占比）；访谈/文档常隐含讨论累计加速，而累计通常低于瞬时（因 2025 非 AI 加速因素 + AI 影响随时间上升）。</p>
+<p>Full Report 用简单会计框架组织间接证据（箭头表示函数依赖：如预训练强度＝算法、数据质量、训练算力的函数；RL 含预训练以外全部贡献）。公开版中相关用法均被删。分析有可复现 notebook/dashboard。</p>
+<h3>AECI 附录：主估计与稳健性</h3>
+<p>用 Epoch 公开代码估各模型 AECI；分层 bootstrap 得 95% CI。每个模型有多快照（日期与分数不同）。公开发布模型：取公开发布快照，日期取「多数 Anthropic 员工可用」日。从未发布的：取获大量内部使用的快照及多数员工可用日。用内部可用日而非公开发布日，以便与未发布模型苹果对苹果；一般显示略高加速（因近期模型在公开发布前内部多留一阵）。</p>
+<p>趋势拟合对前沿上每个快照等权 OLS。趋势 CI 只反映各模型 AECI 分数不确定性，不含「纳入哪些模型」的抽样不确定性。外生施加「恰有 1 个断点」；主设定断点 2025-10-07；稳健性检查保持该断点以便可比。</p>
+<p><strong>链接函数稳健性（加速 1.1×–2.9×）：</strong></p>
+<figure class="table-wrap"><table><thead><tr><th>链接函数</th><th>任务难度分布直觉</th><th>加速</th><th class="al-num">样本外 R²</th></tr></thead><tbody><tr><td>标准 logistic</td><td>对称、指数尾</td><td>1.9×［1.5–2.8］</td><td class="al-num">87.2%</td></tr><tr><td>Probit</td><td>易难两侧尾更小</td><td>1.8×［1.3–2.7］</td><td class="al-num">87.1%</td></tr><tr><td>Cauchit</td><td>两侧尾更大</td><td>2.8×［2.0–4.1］</td><td class="al-num">86.1%</td></tr><tr><td>Complementary log-log</td><td>仅易题大尾</td><td>1.1×［0.8–1.5］</td><td class="al-num">87.1%</td></tr><tr><td>Log-log</td><td>仅难题大尾</td><td>2.9×［2.1–4.9］</td><td class="al-num">86.9%</td></tr><tr><td>学习链接（Stukel）</td><td>两尾长度由数据估</td><td>2.6×［1.8–4.1］</td><td class="al-num">87.0%</td></tr></tbody></table></figure>
+<p>拟合质量相近（cauchit 略差）；继续用 logistic，因它是 Epoch/Anthropic 默认。</p>
+<p>快照选择：标准 1.9×；仅最高快照 1.9×；仅首次快照 <strong>2.2×</strong>；某子集（删红原因）1.9×；全部快照 1.9×。</p>
+<p>基准选择：标准 1.9×；去掉视觉基准 <strong>2.2×</strong>；仅 Claude 标为与 AI R&D 相关的基准 2.0×；去掉平均随 AECI 上升而下降的基准 1.9×；去掉 logistic 拟合 R²<50% 的基准 1.9×；达 85% 后停用该基准（饱和稳健）1.9×。</p>
+<p>正则：标准 1.9×；L2÷10 →1.9×；L2×10 →<strong>2.1×</strong>；无正则 1.9×；对线性时间趋势重定心 L2 →1.9×。</p>
+<p>纳入非 Anthropic 模型时，估计加速更低（约 <strong>1.4×</strong>）：历史趋势多来自非 Anthropic，当前趋势多来自 Anthropic。两种合理解释：(1) Anthropic 2025 年处于次前沿，历史进步被低估 → 1.9× 偏高，1.4× 更准；(2) 若 Anthropic 相对少做基准优化，历史趋势可能因早期点更过拟合而偏高 → 1.4× 偏低，1.9× 更准。</p>
+<p>相对「Mythos Preview 一次性跳升后回到旧趋势」假说：纳入新内部模型后，<strong>永久斜率变化</strong>看起来更可信。</p>
+<p>与公开估计对比：相对 Haiku 系统卡 1.7×，主差是纳入近期仅内部模型；相对 ECI，主差是趋势只取 Anthropic 模型 + 纳入近期内部模型。</p>
+<div class="highlight-card"><p>Model 4 在其测试的全部 AECI 基准上 >50%。** 9 个月前 Opus 4.6 仍有许多 <50% 的基准。难题不足令作者对现在与未来测量 AECI 的能力略感紧张。15 个 Model 4 基准中多数在 log-odds 空间看起来 reasonably linear；3/15 明显平坦或凹。去掉这 3 个可疑基准后重估，Model 4 从 178.6 升到 179.7（+1 点）<span class="dash">——</span>弱证据支持「肥尾导致低估加速」，幅度不大。</p><div class="attr">测量告警</div></div>
+<p>典型任务 token：内部基准约 2.5M in / 72k out；agentic coding 约 10M in / 94k out。粗比 Epoch/METR 公开基准花费更高。猜测若进一步缩放推理 token，各模型 AECI 可再升若干点，且跨模型回报类似 → 加速估计大致不变（未深挖；近期模型可能有更好 token 缩放）。</p>
+<p>基准加速与真实影响：若真实影响是基准分数的凸函数（阈值），AECI 低估真实加速；若 AECI 只覆盖能力子集且真实影响对这些能力递减，则可能高估。作者自信至少存在温和的基准分数增长加速，并认为 AECI 加速未必干净映射到真实影响加速。</p>
+<h3>AI 提速证据附录</h3>
+<p>定义 AI speedup＝有 AI / 无 AI 的产出比（产出常难测）。结论：(1) 有高提速证据，精确量高度不确定；(2) 完全自主 AI R&D 贡献目前不是整体进步的大头，但近未来可能是。</p>
+<p>Claude 对访谈引语是否支持「其领域因 Claude 带来 >2× 加速」的分类：Yes 2；Leans yes 3；Borderline/unclear 4；Leans no 0；No 2 → 轻度偏向 2× 或以上。</p>
+<p>公开引语示例（敏感细节已删）：</p>
+<ul><li>Researcher A：可 endorses >2×；内部观最大效应是模型加速；AI 加速大于其他所有效应；现在只瓶颈于想法与算力、不再瓶颈于代码；可 endorses「1 年 >2 年进步」，4 也不 crazy；80% 效应是想法到实验时间缩短……</li><li>Researcher B：「很难看出我不是 3× 更高效……最简单解释是 Claude。」</li><li>Researcher K：招聘可能是最大原因 → No</li><li>Researcher L：猜 15–20% 因 AI；不信自述生产力；偏好某非 AI 因素解释 → No</li></ul>
+<p>完全自主贡献的 signs of life 来自：自动化训练管线不同部分的多次访谈；不同部分自动化程度内部报告；相关管线中人类/AI 构建任务占比定量分析。细节被删。</p>
+<h3>对抗稳健性、COI、合同、AEF-1</h3>
+<p>对抗稳健：多数数据经两名技术员工；另访谈约 15 人（许多由 METR 自选），未发现主联系人与受访者间不一致。多数分析依赖 Claude（数据收集、文档、METR 自身分析）；对照人类访谈未见系统偏差迹象。认为 Anthropic 主动误导的可能性极低；更大访问可提高对抗稳健度。</p>
+<p>COI：项目开始时适用 v1.0 政策。一名参与者当时在与 Anthropic 谈可能职位（后拒 offer），且作为前员工持有竞争对手股权 → 其纳入评估的工作须由无利益冲突成员彻底核对并承担准确性责任。更新后政策（2026-10-09 后）对此类情况将直接要求回避。无人持有 Anthropic 股权。</p>
+<p>非正式压力：评估自愿；METR 会考虑产出如何影响未来合作意愿。尽量把「因删改导致的局限」讨论聚焦在影响核心结论与不确定性传达的情形；避免过细过程描述妨碍探索性合作。Risk Report Review 因 Anthropic 反馈做过大量清晰度编辑；个别反馈显得过于强硬，Anthropic 接受了相关反馈。认为最终评估未被显著扭曲。</p>
+<p>合同摘要：独立评估 AI 系统自动化/加速 AI R&D 的程度；Anthropic 提供约定访问、对接人、协助调查访谈，可拒不成比例或未过信息审查的请求但须说明并尽量给替代；交付 Full Report（未删改给 Anthropic）、公开主张（经删改流程）、（计划中的）METR 内部轻删版；无双向付款；独立性条款。</p>
+<p>AEF-1：查询未发布模型未请求；充分计算资源与时间（从 4 周延到 11 周）；无结果或有条件补偿；方法自主；编辑控制在 METR，但 Anthropic 控制可写入公开的非公开信息；因删改，<strong>未能</strong>分享足以独立复核结果的方法细节；系统方有权删改非公开信息；已披露删改权；未建立 responsible disclosure policy（清单项 5.4 标 No）。</p>
+<hr class="divider"></section><section class="section" id="s-09"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">09</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>X 上的相关讨论</h2><div class="aside-card"><div class="aside-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><div class="aside-content"><div class="aside-title">讨论怎么读</div><p>点赞数为抓取快照。中文帖里把「signs of life」写成「递归自我改进已启动」的，属于发帖人加码，不是 METR 原文措辞。</p></div></div>
+<p>检索窗口约 2026-11-04 起。时间均为北京时间（Asia/Shanghai）。按立场分组；只收录能核对到的帖子，不编造。点赞/浏览数为抓取时快照。</p>
+<h3>A. METR 官方线程</h3>
+<ul><li><strong>@METR_Evals</strong> · 2026-11-06 02:36 · <a href="https://x.com/METR_Evals/status/2118412183860351084">原帖</a></li></ul>
+<p>自 8 月起用 Anthropic 内部信息评估「AI 是否在加速 AI 开发」，现发布风险评估结果摘要。约 3444 赞 / 82 万展现。</p>
+<ul><li><strong>@METR_Evals</strong> · 同线程 · <a href="https://x.com/METR_Evals/status/2118412194702598339">删改说明</a></li></ul>
+<p>向 Anthropic 提交约 100 页完整报告；公开版删掉了最有信息量证据的多数，公众只能比理想状态更多地依赖 METR 判断。配删改对照图。</p>
+<ul><li><strong>@METR_Evals</strong> · <a href="https://x.com/METR_Evals/status/2118412196770398494">三条主观结论</a></li></ul>
+<p>(1) 定义清楚任务上约 2×（1.3–3×）；(2) 多数加速现可能由 AI 用于 AI R&D 驱动，但不确定，2025 末非 AI 因素大；(3) 未见清晰瓶颈/强递减，未来 12 个月有进一步加速可能。</p>
+<ul><li><strong>@METR_Evals</strong> · <a href="https://x.com/METR_Evals/status/2118412205662314935">AECI 1.9×</a> · 配趋势图</li></ul>
+<p>自 2025-10 AECI 增速 1.9×［1.5–2.8］；分析选择会影响估计；基准与真实能力映射仍不清。</p>
+<ul><li><strong>@METR_Evals</strong> · <a href="https://x.com/METR_Evals/status/2118412208153694480">非算力</a> / <a href="https://x.com/METR_Evals/status/2118412212134158442">访谈与自述</a> / <a href="https://x.com/METR_Evals/status/2118412213832863884">无瓶颈</a> / <a href="https://x.com/METR_Evals/status/2118412216500445397">可能低估/高估</a> / <a href="https://x.com/METR_Evals/status/2118412219256054091">与 10-15 评估方项目不同</a> / <a href="https://x.com/METR_Evals/status/2118412220900249834">算力分配试点被取消</a></li><li><strong>@METR_Evals</strong> · 另发对 Anthropic 2026-08 Risk Report「自动化 R&D 风险」节的<a href="https://x.com/METR_Evals/status/2118417772774580623">审阅线程</a>：同意截至 7 月中直接自动化 R&D 的灾难风险仍低；但认为公开报告<strong>低估了</strong>「已越过加速阈值」的合理可能性；即便约 2× 加速，也多半达不到 Anthropic 灾难情景所要求的那种水平。</li></ul>
+<h3>B. Anthropic 侧回应</h3>
+<ul><li><strong>@Sam_McCandlish</strong>（Anthropic 联合创始人 / Responsible Scaling Officer）· 2026-11-06 03:16 · <a href="https://x.com/Sam_McCandlish/status/2118422266669371519">长帖</a></li></ul>
+<p>约 2559 赞 / 37 万展现。要点：能力进步速度是安全最重要问题之一；METR 给公众提供了独立外部视角。Anthropic 给了未发布模型基准、进度估计、研究员访谈，METR 结论完全独立。许多结论与他一致：AI 在加快研究，但难说清多少；AI 尚不能独立做训练最重要贡献，但默认速度可能进一步加快。承认删得多、更难核查；理由是公开「到底什么在驱动加速」既商业敏感，也等于给别人加速路线图，会让 METR 担心的风险更严重<span class="dash">——</span>认为取舍正确，仍在评估利弊。未来几周 Anthropic 将发自己的进度报告、对照 RSP，以及新的安全措施。本工作早于且独立于 10-15「嵌入式第三方评估方」承诺。</p>
+<ul><li><strong>@Sam_McCandlish</strong> · 2026-11-06 07:42 · <a href="https://x.com/Sam_McCandlish/status/2118489153147183237">回复质疑</a></li></ul>
+<p>未删内容会让别人加速研究；认为安全含义重于透明收益；并指向嵌入式第三方评估方模式作为更长答案的一部分。</p>
+<p>（检索窗口内未见 @AnthropicAI 官方账号直接转发本报告的帖；主要公开回应来自 Sam。）</p>
+<h3>C. 研究者 / 评论者：认可主线，但强调外推与透明度</h3>
+<ul><li><strong>@DavidSKrueger</strong>（Mila / 前 DeepMind、UK AISI）· 2026-11-06 05:33 · <a href="https://x.com/DavidSKrueger/status/2118456622175727911">帖</a> · 130 赞</li></ul>
+<p>认为「AI 自动化 AI R&D → 可验证任务进步偏离数年前趋势」大体为真；但 Anthropic 删了大量相关证据，只能信 METR。关键分歧在于：可验证任务能外推多远。戴对抗帽子时会说：独立评估方现在在帮公司造势，却方便地不能放出真正证据<span class="dash">——</span>观感不好。</p>
+<ul><li><strong>@Thom_Wolf</strong>（Hugging Face 联合创始人）· 2026-11-06 07:05 · <a href="https://x.com/Thom_Wolf/status/2118479815221096785">帖</a> · 74 赞</li></ul>
+<p>报告偏「向内看」：数实验室算力、招聘、内部数据，再把约 80% 加速记到 AI。从外部看，实验室正成为资金的 Schelling point，把钱再分配给它们为加速自身而创造的生态；最好的数据与 RL 环境公司甚至比实验室更早知道模型会在哪失败。很多「AI 加速 AI R&D」发生在实验室外。</p>
+<ul><li><strong>@fleetingbits</strong> · 2026-11-06 07:28 · <a href="https://x.com/fleetingbits/status/2118485551678648351">14 点长帖</a> · 38 赞</li></ul>
+<p>AECI 证据看起来有说服力；被删部分可能是算法效率随时间的信息；加入其他厂商历史模型后加速降至约 1.4×；提速大致从 Opus 4.5 起（编码自动化）；呼吁实验室定期发布内部 ECI 与 research agent 花费；提醒「加速≠世界末日叙事」。</p>
+<ul><li><strong>@deredleritt3r</strong> · 2026-11-06 03:19 · <a href="https://x.com/deredleritt3r/status/2118422855549358552">帖</a> · 418 赞 / 2.9 万展现</li></ul>
+<p>聚焦内部 Model 4（9–10 月训完）、AECI≈178.6（与系统卡 AECI 刻度可能不同；Opus 5.5≈174.5、Mythos 5.1≈172.5）；指出 Anthropic「dramatic acceleration of AI R&D」披露的证据来源；强调 signs of life。配 AECI 图。</p>
+<figure class="figure-card"><img src="media/deredleritt-chart.png" alt="社区整理的内部模型 AECI 示意。图：@deredleritt3r。" loading="lazy" style="border-radius:0" /><figcaption><span class="cap-lead">社区整理的内部模型 AECI 示意。</span>图：@deredleritt3r。</figcaption></figure>
+<p>表：讨论帖配图 · 来源：<a href="https://x.com/deredleritt3r/status/2118422855549358552">deredleritt3r</a></p>
+<h3>D. 中文讨论</h3>
+<ul><li><strong>@dotey（宝玉）</strong> · 2026-11-06 06:12 · <a href="https://x.com/dotey/status/2118466539510960161">长帖</a> · 29 赞 / 1.2 万展现</li></ul>
+<p>系统中文复述报告：2×、约 80% 归 AI、无瓶颈、1.9× AECI、访谈与 12× 自述、大半证据涂黑、算力核查取消、与 Sam 回应对照。强调「进步加速别读成模型聪明一倍」。</p>
+<ul><li><strong>@NFT_Chen</strong> · 2026-11-06 04:38 · <a href="https://x.com/NFT_Chen/status/2118442948060934540">帖</a> · 46 赞 / 2.8 万展现</li></ul>
+<p>强调 Model 4 AECI 178.6、1.9×、递归自我改进叙事；语气比报告本身更强（报告写的是「signs of life」与高度不确定，不是「已经启动」）。</p>
+<ul><li><strong>@0xLogicrw（思维怪怪）</strong> · 2026-11-06 12:36 · <a href="https://x.com/0xLogicrw/status/2118563210609758421">帖</a></li></ul>
+<p>把报告与 Anthropic IPO 招股书中「自我加速研发安全门槛」预警并读；提到 METR 对 8 月风险报告的审阅认为公开表述可能低估越过阈值的合理性。</p>
+<ul><li><strong>@trymorewz</strong> · 2026-11-06 13:32 · <a href="https://x.com/trymorewz/status/2118577269056720995">帖</a></li></ul>
+<p>提醒 1.9× 是基准分数增速，不能直接换算真实任务能力或归因于 AI；公开版删了大量证据。</p>
+<ul><li><strong>@UFO2002616</strong> · 2026-11-06 08:22 · <a href="https://x.com/UFO2002616/status/2118499344898998486">帖</a></li></ul>
+<p>批评 Anthropic「对外劝缓、对内油门」；指出 Model 4 在 15 项 AECI 基准均 >50%，METR 担心基准已不够强。</p>
+<ul><li><strong>@dongqingtry</strong> · 2026-11-06 09:07 · <a href="https://x.com/dongqingtry/status/2118510479236903322">帖</a></li></ul>
+<p>「自己请来的裁判交出难堪报告」角度：能力提升或已翻倍，加速大头可能来自 AI 做研发。</p>
+<ul><li><strong>@nirvanaaa00 / @wellwue / @bufcapy / @AlexZ89757 / @shanfengfengybq</strong> 等亦有中文摘要或短评，主线数字与上文一致；部分强调「证据涂黑 → 只能信评估方」。</li></ul>
+<h3>E. 其他英文转述</h3>
+<ul><li><strong>@shipfrontierai</strong>、<strong>@theCodingBird</strong>、<strong>@robshocks</strong>、<strong>@panera4</strong>、<strong>@anaveentalks</strong> 等多为报告三点结论的转述；有人直接把叙事接到「递归自我改进已经发生」。这些是发帖人解读，并非 METR 原文措辞。</li></ul>
+<hr class="divider">
+<div class="summary-card"><div class="summary-label">X 讨论速览</div><div class="summary-grid"><div class="summary-item"><div class="summary-item-title">METR</div><div class="summary-item-desc">官方长线程：2×、1.9× AECI、删改、无瓶颈、算力核查取消</div></div><div class="summary-item"><div class="summary-item-title">Sam McCandlish</div><div class="summary-item-desc">承认删得多；商业+安全路线图顾虑；将发自家进度与 RSP 对照</div></div><div class="summary-item"><div class="summary-item-title">研究者</div><div class="summary-item-desc">Krueger 批透明度观感；Thom Wolf 说加速多发生在实验室外</div></div><div class="summary-item"><div class="summary-item-title">中文圈</div><div class="summary-item-desc">宝玉长复述；NFT_Chen 强调 Model 4；多家提醒勿把加速读成「聪明一倍」</div></div></div></div></section><section class="section refs" id="s-10"><div class="section-number sn-sym"><span class="sn-side sn-l"><span class="sn-star s3">✦</span><span class="sn-star s2">✦</span><span class="sn-star s1">✦</span></span><span class="sn-num">10</span><span class="sn-side sn-r"><span class="sn-star s1">✦</span><span class="sn-star s2">✦</span><span class="sn-star s3">✦</span></span></div><h2>来源与版权</h2><ul><li>报告原文与图表：© METR，<a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">metr.org 原文页</a></li><li>本页为中文逐节详细导读（编译），非授权全文译本；数字与结构尽量忠实，短引保留英文原句。</li><li>X 帖文版权归原作者；本页仅作讨论索引与观点复述。</li><li>页面制作：归藏阅读页 · 部署于 <code>op7418/reading-pages</code></li></ul></section>
+<div class="divider-dot">· · ·</div>
+<footer><p>归藏 Page · Built with constrained HTML</p></footer>
+
+</div>
+
+<script>
+(function(){
+  const toggle = document.getElementById('toc-toggle');
+  const panel = document.getElementById('toc-panel');
+  const toc = document.getElementById('toc');
+  const scrim = document.getElementById('toc-scrim');
+  const narrow = window.matchMedia('(max-width: 1024px)');
+  let open = false;
+  function setOpen(v) {
+    open = v;
+    toc.classList.toggle('toc-open', v);
+    document.documentElement.classList.toggle('toc-is-open', v);
+    toggle.setAttribute('aria-expanded', String(v));
+  }
+  toggle.addEventListener('click', (e) => { e.stopPropagation(); setOpen(!open); });
+  if (scrim) scrim.addEventListener('click', () => setOpen(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && open) setOpen(false); });
+  panel.addEventListener('click', (e) => {
+    // On narrow screens the drawer covers the text, so close it after jumping;
+    // on wide screens it sits beside the text and can stay open.
+    if (e.target.closest('.toc-item') && narrow.matches) setOpen(false);
+  });
+  // Scroll spy
+  const sections = document.querySelectorAll('.section[id]');
+  const links = document.querySelectorAll('.toc-item');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('toc-active'));
+        const active = panel.querySelector('a[href="#'+entry.target.id+'"]');
+        if (active) active.classList.add('toc-active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+})();
+</script>
+
+<div class="hf-fab">
+  <button class="hf-fab-btn" id="hf-settings-toggle" type="button" title="设置" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></button>
+  <div class="hf-dropdown" id="hf-settings-dropdown">
+    <div class="hf-dropdown-label">配色</div>
+    <div class="hf-swatches"><button type="button" class="hf-swatch" data-theme-id="ink-classic" data-scheme="light" style="background:linear-gradient(135deg,#f1efea 0 50%,#111111 50% 100%)" title="墨水经典 Ink Classic" aria-label="墨水经典"></button><button type="button" class="hf-swatch active" data-theme-id="indigo-porcelain" data-scheme="light" style="background:linear-gradient(135deg,#f1f3f5 0 50%,#315d93 50% 100%)" title="靛蓝瓷 Indigo Porcelain" aria-label="靛蓝瓷"></button><button type="button" class="hf-swatch" data-theme-id="forest-ink" data-scheme="light" style="background:linear-gradient(135deg,#f5f1e8 0 50%,#2e6b4f 50% 100%)" title="森林墨 Forest Ink" aria-label="森林墨"></button><button type="button" class="hf-swatch" data-theme-id="kraft-paper" data-scheme="light" style="background:linear-gradient(135deg,#eedfc7 0 50%,#9b5a2e 50% 100%)" title="牛皮纸 Kraft Paper" aria-label="牛皮纸"></button><button type="button" class="hf-swatch" data-theme-id="dune" data-scheme="light" style="background:linear-gradient(135deg,#f0e6d2 0 50%,#8f7650 50% 100%)" title="沙丘 Dune" aria-label="沙丘"></button><button type="button" class="hf-swatch" data-theme-id="midnight-ink" data-scheme="dark" style="background:linear-gradient(135deg,#0e0d0c 0 50%,#d4a04a 50% 100%)" title="午夜墨 Midnight Ink" aria-label="午夜墨"></button></div>
+    <div class="hf-dropdown-divider"></div>
+    <div class="hf-dropdown-label">字体</div>
+    <div class="hf-font-options"><button type="button" class="hf-font-option active" data-vars="--font-serif" data-family="'Source Serif 4','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif" data-href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&amp;display=swap"><span class="font-preview" style="font-family:'Source Serif 4','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif">衬线 Aa</span><span class="font-name">Source Serif 4</span></button><button type="button" class="hf-font-option" data-vars="--font-serif" data-family="'Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif" data-href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&amp;display=swap"><span class="font-preview" style="font-family:'Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif">衬线 Aa</span><span class="font-name">Noto Serif SC</span></button><button type="button" class="hf-font-option" data-vars="--font-serif" data-family="'Playfair Display','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif" data-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"><span class="font-preview" style="font-family:'Playfair Display','Noto Serif SC','Source Han Serif SC','Songti SC','STSong',Georgia,serif">衬线 Aa</span><span class="font-name">Playfair Display</span></button></div>
+  </div>
+</div>
+<script>(function () {
+  'use strict';
+
+  // Theme options live in assets/themes.json; render.mjs writes the controls
+  // into the HTML statically, so this file only wires up behaviour.
+  const style = document.documentElement.dataset.hfStyle || 'swiss';
+  const $ = (id) => document.getElementById(id);
+  // Per page: a reader's choice on one page (or a brand page's palette) doesn't leak into other pages
+  const STORE = 'hf-page-prefs:' + style + ':' + location.pathname;
+
+  // ── Helpers ──
+  function closeAllDropdowns() {
+    document.querySelectorAll('.hf-dropdown.open').forEach(d => d.classList.remove('open'));
+  }
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.hf-dropdown') && !e.target.closest('.hf-fab-btn')) {
+      closeAllDropdowns();
+    }
+  });
+
+  // PDF / long-image export is no longer in the page: the model runs scripts/export.mjs.
+
+  document.getElementById('hf-settings-toggle').addEventListener('click', (e) => {
+    e.stopPropagation();
+    const dd = document.getElementById('hf-settings-dropdown');
+    const wasOpen = dd.classList.contains('open');
+    closeAllDropdowns();
+    if (!wasOpen) dd.classList.add('open');
+  });
+
+  // ── Theme switching ──
+  // Every palette is a [data-theme] block in the inlined design-system CSS; a swatch only
+  // switches <html data-theme>. Text, rule and accent-text colours come with the theme,
+  // contrast-checked, so nothing is set inline.
+  function applyTheme(sw) {
+    document.querySelectorAll('.hf-swatch').forEach(s => s.classList.toggle('active', s === sw));
+    const root = document.documentElement;
+    root.dataset.theme = sw.dataset.themeId;
+    root.dataset.scheme = sw.dataset.scheme || 'light';
+    root.style.colorScheme = root.dataset.scheme;
+  }
+  // ── Font switching ──
+  // An option swaps the Latin face of the body stack (the CJK face stays); its stylesheet
+  // is loaded on first use.
+  function applyFont(opt) {
+    document.querySelectorAll('.hf-font-option').forEach(o => o.classList.toggle('active', o === opt));
+    (opt.dataset.vars || '--font-sans').split(' ').forEach(v => document.documentElement.style.setProperty(v, opt.dataset.family));
+    const href = opt.dataset.href;
+    if (href && !document.querySelector(`link[data-hf-font="${href}"]`)) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.dataset.hfFont = href;
+      link.href = href;
+      document.head.appendChild(link);
+    }
+  }
+  function save() {
+    try {
+      const sw = document.querySelector('.hf-swatch.active');
+      const fo = document.querySelector('.hf-font-option.active');
+      localStorage.setItem(STORE, JSON.stringify({ theme: sw && sw.dataset.themeId, font: fo && fo.dataset.family }));
+    } catch (e) {}
+  }
+  document.querySelectorAll('.hf-swatch').forEach(sw => sw.addEventListener('click', (e) => { e.stopPropagation(); applyTheme(sw); save(); }));
+  document.querySelectorAll('.hf-font-option').forEach(opt => opt.addEventListener('click', (e) => { e.stopPropagation(); applyFont(opt); save(); }));
+  try {
+    const prefs = JSON.parse(localStorage.getItem(STORE) || 'null');
+    if (prefs) {
+      const sw = [...document.querySelectorAll('.hf-swatch')].find(s => s.dataset.themeId === prefs.theme);
+      if (sw && !sw.classList.contains('active')) applyTheme(sw);
+      const fo = [...document.querySelectorAll('.hf-font-option')].find(o => o.dataset.family === prefs.font);
+      if (fo && !fo.classList.contains('active')) applyFont(fo);
+    }
+  } catch (e) {}
+
+  // ── Make lazy images print/export-safe ──
+  // loading="lazy" images below the fold are blank in PDF/long-image exports.
+  function eagerImages() { document.querySelectorAll('img[loading="lazy"]').forEach(i => { i.loading = 'eager'; }); }
+  window.addEventListener('beforeprint', eagerImages);
+  if (document.readyState === 'complete') setTimeout(eagerImages, 800);
+  else window.addEventListener('load', () => setTimeout(eagerImages, 800));
+
+  // ── Editable text ──
+  const editableSelectors = [
+    '.hero h1',
+    '.hero-subtitle',
+    '.hero-cover h1',
+    '.hero-cover .hero-subtitle',
+    '.section h2',
+    '.section h3',
+    '.section p',
+    '.section li',
+    '.pullquote p',
+    '.pullquote-swiss .pq-content p',
+    '.highlight-card p',
+    '.highlight-swiss .hl-body p',
+    '.def-card-body',
+    '.def-card-swiss .dc-body',
+    '.process-title',
+    '.process-desc',
+    '.aside-content p',
+    '.summary-item-title',
+    '.summary-item-desc',
+    'blockquote p',
+    'td',
+  ];
+  editableSelectors.forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => {
+      el.setAttribute('contenteditable', 'true');
+      el.setAttribute('spellcheck', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
